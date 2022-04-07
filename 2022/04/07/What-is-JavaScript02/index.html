@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>what is JavaScript 2 | HI</title><meta name="keywords" content="JavaScript"><meta name="author" content="XU XUESI"><meta name="copyright" content="XU XUESI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HTML中的JavaScript&lt;script&gt;元素 8个属性async：可选 立即开始下载脚本 不能阻止其他页面动作（下载资源或等待其他脚本加载） 只对外部脚本文件有效 charset：可选 指定代码字符集 多数浏览器不在乎 crossorigin：可选 跨域 默认不适用CORS differ、integrity 可选 language 废弃 被 type 代替 src 可选 要执行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="what is JavaScript 2">
+<meta property="og:url" content="http://xsjsx.top/2022/04/07/What-is-JavaScript02/index.html">
+<meta property="og:site_name" content="HI">
+<meta property="og:description" content="HTML中的JavaScript&lt;script&gt;元素 8个属性async：可选 立即开始下载脚本 不能阻止其他页面动作（下载资源或等待其他脚本加载） 只对外部脚本文件有效 charset：可选 指定代码字符集 多数浏览器不在乎 crossorigin：可选 跨域 默认不适用CORS differ、integrity 可选 language 废弃 被 type 代替 src 可选 要执行">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2022/04/07/d7SPxkgNenwRMEh.png">
+<meta property="article:published_time" content="2022-04-07T08:48:48.000Z">
+<meta property="article:modified_time" content="2022-04-07T10:23:27.417Z">
+<meta property="article:author" content="XU XUESI">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/07/d7SPxkgNenwRMEh.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xsjsx.top/2022/04/07/What-is-JavaScript02/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'what is JavaScript 2',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-07 18:23:27'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/07/d7SPxkgNenwRMEh.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HI</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">what is JavaScript 2</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-07T08:48:48.000Z" title="Created 2022-04-07 16:48:48">2022-04-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-07T10:23:27.417Z" title="Updated 2022-04-07 18:23:27">2022-04-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="what is JavaScript 2"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HTML中的JavaScript"><a href="#HTML中的JavaScript" class="headerlink" title="HTML中的JavaScript"></a>HTML中的JavaScript</h1><h2 id="lt-script-gt-元素"><a href="#lt-script-gt-元素" class="headerlink" title="&lt;script&gt;元素"></a><code>&lt;script&gt;</code>元素</h2><hr>
+<h3 id="8个属性"><a href="#8个属性" class="headerlink" title="8个属性"></a>8个属性</h3><p>async：可选 <u>立即开始下载脚本</u> 不能阻止其他页面动作（下载资源或等待其他脚本加载） 只对外部脚本文件有效</p>
+<p>charset：可选 指定<u>代码字符集</u> 多数浏览器不在乎</p>
+<p>crossorigin：可选 跨域 默认不适用CORS</p>
+<p>differ、integrity 可选</p>
+<p>language 废弃 被 type 代替</p>
+<p>src 可选 要执行的代码的外部文件</p>
+<p><strong>如果设置了 <code>src</code> 特性，<code>script</code> 标签内容将会被忽略。</strong></p>
+<p>一个单独的 <code>&lt;script&gt;</code> 标签不能同时有 <code>src</code> 特性和内部包裹的代码</p>
+<script src="file.js"> 
+alert(1); // 此内容会被忽略，因为设定了src
+</script>
+
+<p>需要写成2个<code>&lt;script&gt;</code> 标签</p>
+<p>type (MIME脚本语言的内容类型) 可选 按例都是”text&#x2F;javascript”  </p>
+<p>当type&#x3D;module会被当成ES6 代码会出现import、export</p>
+<h3 id="2种使用方法"><a href="#2种使用方法" class="headerlink" title="2种使用方法"></a>2种使用方法</h3><hr>
+<p>嵌入</p>
+<p>行内代码 不能出现<code>&lt;/ script&gt;</code> 会导致报错</p>
+<p>若要输入可以 使用 转义字符 “\”</p>
+<p>使用src调用外部文件</p>
+<p>浏览器会按照<code>&lt;script&gt;</code> 在页面中出现的顺序依次解释他们</p>
+<p>只有最简单的脚本才嵌入到 HTML 中。更复杂的脚本存放在单独的文件中。</p>
+<p>使用独立文件的好处是浏览器会下载它，然后将它保存到浏览器的 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Web_cache">缓存</a> 中。</p>
+<h4 id="外部文件优点"><a href="#外部文件优点" class="headerlink" title="外部文件优点"></a>外部文件优点</h4><ol>
+<li>可维护性</li>
+<li>缓存</li>
+<li>是因为来</li>
+</ol>
+<p>留意 SPDY&#x2F;HTTP2 新的浏览器支持</p>
+<p>能批量 逐个放到浏览器缓存中</p>
+<h3 id="标签位置"><a href="#标签位置" class="headerlink" title="标签位置"></a>标签位置</h3><hr>
+<p><strong>过去</strong> </p>
+<p>把外部CSS和JavaScript文件都集中放在一起 <code>&lt;head&gt;</code> 标签内</p>
+<p>但是如果 需要浏览器解释完<strong>所有</strong>JavaScript代买后 才能渲染页面</p>
+<p>页面是在<code>&lt;body&gt;</code>的启示标签时开始渲染  导致页面渲染的明显延迟</p>
+<p><strong>现在</strong></p>
+<p>将JavaScript引用放在<code>&lt;body&gt;</code> 元素中页面内容的后面 </p>
+<p>页面会在处理JavaScript代码前完全渲染页面 用户会感觉到加载更快了</p>
+<h3 id="推迟执行脚本"><a href="#推迟执行脚本" class="headerlink" title="推迟执行脚本"></a>推迟执行脚本</h3><p><code>&lt;script defer src=&quot; &quot;&gt;</code> <code>&lt;/ script&gt;</code></p>
+<p>HTML5 会忽略行内脚本defer </p>
+<p>通常将推迟执行的脚本放在页面底部</p>
+<p>IE已死 应该废弃</p>
+<h3 id="异步执行脚本"><a href="#异步执行脚本" class="headerlink" title="异步执行脚本"></a>异步执行脚本</h3><p><code>&lt;script async src=&quot; &quot;&gt;</code> <code>&lt;/ script&gt;</code></p>
+<p>不必等脚本下载和执行后在加载页面</p>
+<p>支持但不推荐使用</p>
+<h3 id="动态加载脚本"><a href="#动态加载脚本" class="headerlink" title="动态加载脚本"></a>动态加载脚本</h3><p>通过DOM API 添加<code>&lt;script&gt;</code>元素</p>
+<h3 id="XHTML-extensible-超文本标记语言"><a href="#XHTML-extensible-超文本标记语言" class="headerlink" title="XHTML extensible 超文本标记语言"></a>XHTML extensible 超文本标记语言</h3><p>废弃 担忧遗留</p>
+<p>转义字符 &gt; &lt; 等</p>
+<p>或者使用 CDATA</p>
+<h2 id="文档模式"><a href="#文档模式" class="headerlink" title="文档模式"></a>文档模式</h2><p>doctype切换文档模式</p>
+<p>混杂模式 省略doctype声明为开关</p>
+<p>标准模式 准标准模式 很接近（除混杂模式以外的都可以叫标准）</p>
+<p>noscript 元素</p>
+<p>用于不支持或禁用JavaScript的浏览器</p>
+<p>如果浏览器支持JavaScript则永远看不到noscript里面的内容</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
+<ol>
+<li>引入外部JavaScript文件 设置src :包含文件的URL  可以同一个服务器上 也可以完全不同的域</li>
+<li>按照<code>&lt;script&gt;</code>在网页上出现的次序一次解释 不使用defer、async会严格按次序解释</li>
+<li>通常将<code>&lt;script&gt;</code>元素放在页面末尾 介于主内容和<code>&lt;/body&gt;</code>之间</li>
+<li>defer可以推迟 但将死 async能够不等待 但不能保证次序</li>
+<li><code>&lt;noscript&gt;</code>指定不支持脚本时显示的内容</li>
+</ol>
+<h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><hr>
+<p>创建一个页面，然后显示一个消息 “I’m JavaScript!”。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">          <span class="title function_">alert</span>(<span class="string">&quot;I’m JavaScript!&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">XU XUESI</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xsjsx.top/2022/04/07/What-is-JavaScript02/">http://xsjsx.top/2022/04/07/What-is-JavaScript02/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/04/07/d7SPxkgNenwRMEh.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/04/07/CSS%E4%B8%96%E7%95%8C/"><img class="next-cover" src="https://s3.bmp.ovh/imgs/2022/04/07/d46d208771061177.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">CSS世界</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/04/06/About-the-blog/" title="About the blog"><img class="cover" src="https://s2.loli.net/2022/04/07/IfvXLpxRaKr5NOu.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-06</div><div class="title">About the blog</div></div></a></div><div><a href="/2022/04/07/relearn-the-front-end/" title="Relearn the front end"><img class="cover" src="https://s3.bmp.ovh/imgs/2022/04/07/d46d208771061177.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">Relearn the front end</div></div></a></div><div><a href="/2022/04/07/What-is-JavaScript01/" title="What is JavaScript 1"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">What is JavaScript 1</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XU XUESI</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">3</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxscqukeio"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxscqukeio" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hsuxuesi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E4%B8%AD%E7%9A%84JavaScript"><span class="toc-number">1.</span> <span class="toc-text">HTML中的JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-script-gt-%E5%85%83%E7%B4%A0"><span class="toc-number">1.1.</span> <span class="toc-text">&lt;script&gt;元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E4%B8%AA%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.1.</span> <span class="toc-text">8个属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E7%A7%8D%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">2种使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E4%BC%98%E7%82%B9"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">外部文件优点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.1.3.</span> <span class="toc-text">标签位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%BF%9F%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="toc-number">1.1.4.</span> <span class="toc-text">推迟执行脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC"><span class="toc-number">1.1.5.</span> <span class="toc-text">异步执行脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E8%84%9A%E6%9C%AC"><span class="toc-number">1.1.6.</span> <span class="toc-text">动态加载脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XHTML-extensible-%E8%B6%85%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80"><span class="toc-number">1.1.7.</span> <span class="toc-text">XHTML extensible 超文本标记语言</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">文档模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.4.</span> <span class="toc-text">任务</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/07/What-is-JavaScript02/" title="what is JavaScript 2"><img src="https://s2.loli.net/2022/04/07/d7SPxkgNenwRMEh.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="what is JavaScript 2"/></a><div class="content"><a class="title" href="/2022/04/07/What-is-JavaScript02/" title="what is JavaScript 2">what is JavaScript 2</a><time datetime="2022-04-07T08:48:48.000Z" title="Created 2022-04-07 16:48:48">2022-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/07/CSS%E4%B8%96%E7%95%8C/" title="CSS世界"><img src="https://s3.bmp.ovh/imgs/2022/04/07/d46d208771061177.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS世界"/></a><div class="content"><a class="title" href="/2022/04/07/CSS%E4%B8%96%E7%95%8C/" title="CSS世界">CSS世界</a><time datetime="2022-04-07T07:41:09.000Z" title="Created 2022-04-07 15:41:09">2022-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/07/CSS/" title="CSS"><img src="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS"/></a><div class="content"><a class="title" href="/2022/04/07/CSS/" title="CSS">CSS</a><time datetime="2022-04-07T06:57:20.000Z" title="Created 2022-04-07 14:57:20">2022-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/07/Learning-data-structures-and-algorithms/" title="Learning data structures and algorithms"><img src="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learning data structures and algorithms"/></a><div class="content"><a class="title" href="/2022/04/07/Learning-data-structures-and-algorithms/" title="Learning data structures and algorithms">Learning data structures and algorithms</a><time datetime="2022-04-07T05:01:19.000Z" title="Created 2022-04-07 13:01:19">2022-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/07/What-is-JavaScript01/" title="What is JavaScript 1"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="What is JavaScript 1"/></a><div class="content"><a class="title" href="/2022/04/07/What-is-JavaScript01/" title="What is JavaScript 1">What is JavaScript 1</a><time datetime="2022-04-07T04:59:45.000Z" title="Created 2022-04-07 12:59:45">2022-04-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XU XUESI</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
