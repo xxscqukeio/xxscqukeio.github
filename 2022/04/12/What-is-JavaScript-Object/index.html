@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>What is JavaScript Object | HI</title><meta name="keywords" content="JavaScript"><meta name="author" content="XU XUESI"><meta name="copyright" content="XU XUESI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="对象8种数据类型 7+1 存储 键值对+更复杂实体 属性列表{…} 键值对 key: value   12let user &#x3D; new Object(); &#x2F;&#x2F; “构造函数” 的语法let user &#x3D; &amp;#123;&amp;#125;;  &#x2F;&#x2F; “字面量” 的语法  使用方括号，可用于任何字符串： 12345678910111213&#x2F;&#x2F; 这将提示有语法错误user.likes birds &#x3D; truel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is JavaScript Object">
+<meta property="og:url" content="http://xsjsx.top/2022/04/12/What-is-JavaScript-Object/index.html">
+<meta property="og:site_name" content="HI">
+<meta property="og:description" content="对象8种数据类型 7+1 存储 键值对+更复杂实体 属性列表{…} 键值对 key: value   12let user &#x3D; new Object(); &#x2F;&#x2F; “构造函数” 的语法let user &#x3D; &amp;#123;&amp;#125;;  &#x2F;&#x2F; “字面量” 的语法  使用方括号，可用于任何字符串： 12345678910111213&#x2F;&#x2F; 这将提示有语法错误user.likes birds &#x3D; truel">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg">
+<meta property="article:published_time" content="2022-04-12T04:01:27.000Z">
+<meta property="article:modified_time" content="2022-04-12T17:16:55.294Z">
+<meta property="article:author" content="XU XUESI">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xsjsx.top/2022/04/12/What-is-JavaScript-Object/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'What is JavaScript Object',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-13 01:16:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">22</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HI</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">What is JavaScript Object</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-12T04:01:27.000Z" title="Created 2022-04-12 12:01:27">2022-04-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-12T17:16:55.294Z" title="Updated 2022-04-13 01:16:55">2022-04-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="What is JavaScript Object"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><p>8种数据类型 7+1</p>
+<p>存储 键值对+更复杂实体</p>
+<p>属性列表{…}</p>
+<p>键值对 key: value</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412174547811.png" alt="image-20220412174547811" style="zoom:25%;" />
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = <span class="keyword">new</span> <span class="title class_">Object</span>(); <span class="comment">// “构造函数” 的语法</span></span><br><span class="line"><span class="keyword">let</span> user = &#123;&#125;;  <span class="comment">// “字面量” 的语法</span></span><br></pre></td></tr></table></figure>
+
+<p>使用<strong>方括号</strong>，可用于任何字符串：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这将提示有语法错误</span></span><br><span class="line">user.<span class="property">likes</span> birds = <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> user = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置</span></span><br><span class="line">user[<span class="string">&quot;likes birds&quot;</span>] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取</span></span><br><span class="line"><span class="title function_">alert</span>(user[<span class="string">&quot;likes birds&quot;</span>]); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除</span></span><br><span class="line"><span class="keyword">delete</span> user[<span class="string">&quot;likes birds&quot;</span>];</span><br></pre></td></tr></table></figure>
+
+<h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a><strong>计算属性</strong></h2><hr>
+<p>数字 <code>0</code> 被用作对象的属性的键时，会被转换为字符串 <code>&quot;0&quot;</code></p>
+<p><code>__proto__</code> 的属性    不能将它设置为一个非<strong>对象</strong>的值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line">obj.<span class="property">__proto__</span> = <span class="number">5</span>; <span class="comment">// 分配一个数字</span></span><br><span class="line"><span class="title function_">alert</span>(obj.<span class="property">__proto__</span>); <span class="comment">// [object Object] — 值为对象，与预期结果不同</span></span><br></pre></td></tr></table></figure>
+
+<p>检查属性是否存在的操作符 <code>&quot;in&quot;</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">  <span class="attr">test</span>: <span class="literal">undefined</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( obj.<span class="property">test</span> ); <span class="comment">// 显示 undefined，所以属性不存在？</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="string">&quot;test&quot;</span> <span class="keyword">in</span> obj ); <span class="comment">// true，属性存在！</span></span><br></pre></td></tr></table></figure>
+
+<p>遍历一个对象的所有键（key），可以使用一个特殊形式的循环：<code>for..in</code></p>
+<p><strong>整数</strong>属性会被进行排序，<strong>其他属性</strong>则按照创建的顺序显示。</p>
+<p>解决电话号码的问题，我们可以使用非整数属性名来 <strong>欺骗</strong> 程序</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> codes = &#123;</span><br><span class="line">  <span class="string">&quot;+49&quot;</span>: <span class="string">&quot;Germany&quot;</span>,</span><br><span class="line">  <span class="string">&quot;+41&quot;</span>: <span class="string">&quot;Switzerland&quot;</span>,</span><br><span class="line">  <span class="string">&quot;+44&quot;</span>: <span class="string">&quot;Great Britain&quot;</span>,</span><br><span class="line">  <span class="comment">// ..,</span></span><br><span class="line">  <span class="string">&quot;+1&quot;</span>: <span class="string">&quot;USA&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> code <span class="keyword">in</span> codes) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( +code ); <span class="comment">// 49, 41, 44, 1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>isEmpty(obj)</code> 函数</p>
+<p>遍历这个对象，如果对象存在任何属性则 <code>return false</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">isEmpty</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="comment">// 如果进到循环里面，说明有属性。</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>创建一个 <code>multiplyNumeric(obj)</code> 函数，把 <code>obj</code> 所有的<strong>数值属性值</strong>都乘以 <code>2</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">multiplyNumeric</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[key] == <span class="string">&#x27;number&#x27;</span>) &#123;</span><br><span class="line">      obj[key] *= <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="对象引用和复制"><a href="#对象引用和复制" class="headerlink" title="对象引用和复制"></a>对象引用和复制</h2><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> message = <span class="string">&quot;Hello!&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> phrase = message;</span><br><span class="line"><span class="comment">//将 message 复制到 phrase</span></span><br></pre></td></tr></table></figure>
+
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412181851745.png" alt="image-20220412181851745" style="zoom:25%;" />
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123; <span class="attr">name</span>: <span class="string">&quot;John&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">let</span> admin = user; <span class="comment">// 复制引用</span></span><br><span class="line">admin.<span class="property">name</span> = <span class="string">&#x27;Pete&#x27;</span>; <span class="comment">// 通过 &quot;admin&quot; 引用来修改</span></span><br><span class="line"><span class="title function_">alert</span>(user.<span class="property">name</span>); <span class="comment">// &#x27;Pete&#x27;，修改能通过 &quot;user&quot; 引用看到</span></span><br></pre></td></tr></table></figure>
+
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412182100797.png" alt="image-20220412182100797" style="zoom:25%;" />
+
+<h3 id="拷贝，克隆"><a href="#拷贝，克隆" class="headerlink" title="拷贝，克隆"></a>拷贝，克隆</h3><hr>
+<p>创建一个新对象，并通过遍历现有属性的结构</p>
+<p>复制已有对象的结构</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">name=<span class="string">&quot;xu&quot;</span>,</span><br><span class="line">age = <span class="number">25</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> clone = &#123;&#125;;	<span class="comment">//创建一个新对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 将 user 中所有的属性拷贝到其中</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> user)&#123;</span><br><span class="line">	clone[key] = user[key];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign">Object.assign</a> 方法来达成同样的效果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(dest, [src1, src2, src3...])</span><br></pre></td></tr></table></figure>
+
+<p>所有源对象的属性拷贝到目标对象 <code>dest</code> 浅拷贝</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, user);</span><br></pre></td></tr></table></figure>
+
+<p><code>user</code> 中的所有属性拷贝到了一个空对象中，并返回这个新的对象</p>
+<h2 id="深层克隆"><a href="#深层克隆" class="headerlink" title="深层克隆"></a>深层克隆</h2><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">sizes</span>: &#123;</span><br><span class="line">    <span class="attr">height</span>: <span class="number">182</span>,</span><br><span class="line">    <span class="attr">width</span>: <span class="number">50</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( user.<span class="property">sizes</span>.<span class="property">height</span> ); <span class="comment">// 182</span></span><br><span class="line">----------------------</span><br><span class="line"><span class="keyword">let</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, user);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( user.<span class="property">sizes</span> === clone.<span class="property">sizes</span> ); <span class="comment">// true，同一个对象</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// user 和 clone 分享同一个 sizes</span></span><br><span class="line">user.<span class="property">sizes</span>.<span class="property">width</span>++;       <span class="comment">// 通过其中一个改变属性值</span></span><br><span class="line"><span class="title function_">alert</span>(clone.<span class="property">sizes</span>.<span class="property">width</span>); <span class="comment">// 51，能从另外一个看到变更的结果</span></span><br></pre></td></tr></table></figure>
+
+<p><code>user.sizes</code> 是个对象，它会以引用形式被拷贝</p>
+<p>使用一个拷贝循环来检查 <code>user[key]</code> 的每个值，如果它是一个对象，那么也复制它的结构</p>
+<p>递归来实现它</p>
+<p> <a target="_blank" rel="noopener" href="https://lodash.com/">lodash</a> 库的 <a target="_blank" rel="noopener" href="https://lodash.com/docs#cloneDeep">_.cloneDeep(obj)</a></p>
+<p> <strong>const 声明的对象也是可以被修改的</strong></p>
+<p>是指修改的是对象属性</p>
+<p><code>user=...</code> 作为一个整体进行赋值时，<code>const user</code> 才会报错。</p>
+<h2 id="深度拷贝"><a href="#深度拷贝" class="headerlink" title="深度拷贝"></a>深度拷贝</h2><hr>
+<p>代码？</p>
+<h3 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h3><hr>
+<p> <strong>可达性</strong></p>
+<p>那些以某种方式<strong>可访问</strong>或<strong>可用</strong>的值    一定存储在内存中</p>
+<p>固有的可达值的基本集合，这些值明显不能被释放:</p>
+<ul>
+<li>当前执行的函数，它的局部变量和参数。</li>
+<li>当前嵌套调用链上的其他函数、它们的局部变量和参数。</li>
+<li>全局变量。</li>
+<li>（还有一些内部的）</li>
+</ul>
+<p>这些值被称作 <strong>根（roots）</strong></p>
+<p>通过<strong>引用</strong>或<strong>引用链</strong>从根访问任何其他值，该 对象被认为是<strong>可达</strong>的</p>
+<p> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)">垃圾回收器</a> 的东西在后台执行</p>
+<p><strong>监控</strong>着所有对象的状态，并删除掉那些已经<strong>不可达的</strong></p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412232232201.png" alt="image-20220412232232201" style="zoom:25%;" />
+
+<p>可达</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412232310537.png" alt="image-20220412232310537" style="zoom:25%;" />
+
+<p>如果 <code>user</code> 的值被重写了，这个引用就没了</p>
+<p>John 不可达，垃圾回收器会认为它是垃圾数据并进行回收，然后释放内存。</p>
+<h3 id="两个引用"><a href="#两个引用" class="headerlink" title="两个引用"></a>两个引用</h3><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// user 具有对这个对象的引用</span></span><br><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> admin = user;</span><br><span class="line">user = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412232704334.png" alt="image-20220412232704334" style="zoom:25%;" />
+
+<p>仍然可以被通过 <code>admin</code> 这个全局变量访问到，所以对象还在内存中。</p>
+<h3 id="相互关联的对象"><a href="#相互关联的对象" class="headerlink" title="相互关联的对象"></a>相互关联的对象</h3><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">marry</span>(<span class="params">man, woman</span>) &#123;</span><br><span class="line">  woman.<span class="property">husband</span> = man;</span><br><span class="line">  man.<span class="property">wife</span> = woman;</span><br><span class="line">   </span><br><span class="line">   <span class="comment">//返回了一个包含这两个对象的新对象    </span></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">father</span>: man,</span><br><span class="line">    <span class="attr">mother</span>: woman</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> family = <span class="title function_">marry</span>(&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;Ann&quot;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> family.<span class="property">father</span>;</span><br><span class="line"><span class="keyword">delete</span> family.<span class="property">mother</span>.<span class="property">husband</span>;</span><br></pre></td></tr></table></figure>
+
+<p> 内存结构</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412233212874.png" alt="image-20220412233212874" style="zoom:25%;" />
+
+<p>移除两个引用 John  现在是不可达 </p>
+<p>John 的所有数据也将变得不可达</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412233409613.png" alt="image-20220412233409613" style="zoom:25%;" />
+
+<p>无法到达的岛屿</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">family = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412233914430.png" alt="image-20220412233914430" style="zoom:25%;" />
+
+<p>无法通过这个过程访问到的对象被认为是不可达的，并且会被删除</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220412234110106.png" alt="image-20220412234110106" style="zoom:25%;" />
+
+<p>mark and sweep，标记清除法</p>
+<p>主要需要掌握的内容：</p>
+<ul>
+<li>垃圾回收是自动完成的，我们不能强制执行或是阻止执行。</li>
+<li>当对象是可达状态时，它一定是存在于内存中的。</li>
+<li>被引用与可访问（从一个根）不同：一组相互连接的对象可能整体都不可达。</li>
+</ul>
+<p><strong>分代收集（Generational collection）</strong></p>
+<p><strong>增量收集（Incremental collection）</strong></p>
+<p><strong>闲时收集（Idle-time collection）</strong></p>
+<h3 id="对象方法，this"><a href="#对象方法，this" class="headerlink" title="对象方法，this"></a>对象方法，this</h3><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> user = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>（action）由属性中的函数来表示</p>
+<p><code>this</code> 的值是在程序运行时得到的。</p>
+<ul>
+<li>一个函数在声明时，可能就使用了 <code>this</code>，但是这个 <code>this</code> 只有在函数被调用时才会有值。</li>
+<li>可以在对象之间复制函数。</li>
+<li>以“方法”的语法调用函数时：<code>object.method()</code>，调用过程中的 <code>this</code> 值是 <code>object</code>。</li>
+</ul>
+<p>箭头函数有些特别：它们没有 <code>this</code>。在箭头函数内部访问到的 <code>this</code> 都是从外部获取的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">makeUser</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">    <span class="attr">ref</span>: <span class="variable language_">this</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="title function_">makeUser</span>();</span><br><span class="line"><span class="title function_">alert</span>( user.<span class="property">ref</span>.<span class="property">name</span> ); <span class="comment">// 结果是什么？</span></span><br><span class="line"> <span class="comment">// Error: Cannot read property &#x27;name&#x27; of undefined</span></span><br></pre></td></tr></table></figure>
+
+<p><code>user.ref()</code> 是一个方法。<code>this</code> 的值为点符号 <code>.</code> 前的这个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">makeUser</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">    <span class="title function_">ref</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="variable language_">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> user = <span class="title function_">makeUser</span>();</span><br><span class="line"><span class="title function_">alert</span>( user.<span class="title function_">ref</span>().<span class="property">name</span> ); <span class="comment">// John</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="创建一个计算器"><a href="#创建一个计算器" class="headerlink" title="创建一个计算器"></a>创建一个计算器</h3><hr>
+<p>创建一个有三个方法的 <code>calculator</code> 对象：</p>
+<ul>
+<li><code>read()</code> 提示输入两个值，并将其保存为对象属性。</li>
+<li><code>sum()</code> 返回保存的值的和。</li>
+<li><code>mul()</code> 将保存的值相乘并返回计算结果。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> calculator = &#123;</span><br><span class="line">    <span class="title function_">sum</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">a</span> + <span class="variable language_">this</span>.<span class="property">b</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="title function_">mul</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">a</span> * <span class="variable language_">this</span>.<span class="property">b</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="title function_">read</span>(<span class="params"></span>)&#123;</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">a</span> = +<span class="title function_">prompt</span>(<span class="string">&quot;a&quot;</span>,<span class="number">0</span>);</span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">b</span> = +<span class="title function_">prompt</span>(<span class="string">&quot;b&quot;</span>,<span class="number">0</span>);</span><br><span class="line">   &#125;</span><br><span class="line">        </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">calculator.<span class="title function_">read</span>();</span><br><span class="line"><span class="title function_">alert</span>( calculator.<span class="title function_">sum</span>() );</span><br><span class="line"><span class="title function_">alert</span>( calculator.<span class="title function_">mul</span>() );</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">XU XUESI</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xsjsx.top/2022/04/12/What-is-JavaScript-Object/">http://xsjsx.top/2022/04/12/What-is-JavaScript-Object/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/13/What-is-JavaScript-Object-2/"><img class="prev-cover" src="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">What is JavaScript Object 2</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/12/Be-a-good-coder/"><img class="next-cover" src="https://s2.loli.net/2022/04/08/9xjWRasoBVcDdf5.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Be a good coder</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/04/06/About-the-blog/" title="About the blog"><img class="cover" src="https://s2.loli.net/2022/04/07/IfvXLpxRaKr5NOu.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-06</div><div class="title">About the blog</div></div></a></div><div><a href="/2022/04/07/What-is-JavaScript02/" title="What is JavaScript 2"><img class="cover" src="https://s2.loli.net/2022/04/08/XUqeavKysYJD3j2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">What is JavaScript 2</div></div></a></div><div><a href="/2022/04/07/What-is-JavaScript01/" title="What is JavaScript 1"><img class="cover" src="https://s2.loli.net/2022/04/08/OFRvV7nebXdygU5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">What is JavaScript 1</div></div></a></div><div><a href="/2022/04/08/What-is-JavaScript03/" title="What is JavaScript 3"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-08</div><div class="title">What is JavaScript 3</div></div></a></div><div><a href="/2022/04/08/What-is-JavaScript04/" title="What is JavaScript 4"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-08</div><div class="title">What is JavaScript 4</div></div></a></div><div><a href="/2022/04/09/What-is-JavaScript05/" title="What is JavaScript 5"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-09</div><div class="title">What is JavaScript 5</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XU XUESI</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">22</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxscqukeio"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxscqukeio" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hsuxuesi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">计算属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8%E5%92%8C%E5%A4%8D%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">对象引用和复制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%EF%BC%8C%E5%85%8B%E9%9A%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">拷贝，克隆</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%B1%82%E5%85%8B%E9%9A%86"><span class="toc-number">1.3.</span> <span class="toc-text">深层克隆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.4.</span> <span class="toc-text">深度拷贝</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="toc-number">1.4.1.</span> <span class="toc-text">垃圾回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E5%BC%95%E7%94%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">两个引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E4%BA%92%E5%85%B3%E8%81%94%E7%9A%84%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.4.3.</span> <span class="toc-text">相互关联的对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%8Cthis"><span class="toc-number">1.4.4.</span> <span class="toc-text">对象方法，this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%AE%A1%E7%AE%97%E5%99%A8"><span class="toc-number">1.4.5.</span> <span class="toc-text">创建一个计算器</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/What-is-JavaScript-Object-3/" title="What is JavaScript Object 3"><img src="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="What is JavaScript Object 3"/></a><div class="content"><a class="title" href="/2022/04/13/What-is-JavaScript-Object-3/" title="What is JavaScript Object 3">What is JavaScript Object 3</a><time datetime="2022-04-12T17:37:50.000Z" title="Created 2022-04-13 01:37:50">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/13/What-is-JavaScript-Object-2/" title="What is JavaScript Object 2"><img src="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="What is JavaScript Object 2"/></a><div class="content"><a class="title" href="/2022/04/13/What-is-JavaScript-Object-2/" title="What is JavaScript Object 2">What is JavaScript Object 2</a><time datetime="2022-04-12T16:36:40.000Z" title="Created 2022-04-13 00:36:40">2022-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/12/What-is-JavaScript-Object/" title="What is JavaScript Object"><img src="https://s2.loli.net/2022/04/08/OZik6bI4rY1UHLe.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="What is JavaScript Object"/></a><div class="content"><a class="title" href="/2022/04/12/What-is-JavaScript-Object/" title="What is JavaScript Object">What is JavaScript Object</a><time datetime="2022-04-12T04:01:27.000Z" title="Created 2022-04-12 12:01:27">2022-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/12/Be-a-good-coder/" title="Be a good coder"><img src="https://s2.loli.net/2022/04/08/9xjWRasoBVcDdf5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Be a good coder"/></a><div class="content"><a class="title" href="/2022/04/12/Be-a-good-coder/" title="Be a good coder">Be a good coder</a><time datetime="2022-04-11T16:57:27.000Z" title="Created 2022-04-12 00:57:27">2022-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/11/JavaScript-Syntax-Advanced-2/" title="JavaScript Syntax Advanced 2"><img src="https://s2.loli.net/2022/04/08/eoiF4Axdw8cXMRT.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript Syntax Advanced 2"/></a><div class="content"><a class="title" href="/2022/04/11/JavaScript-Syntax-Advanced-2/" title="JavaScript Syntax Advanced 2">JavaScript Syntax Advanced 2</a><time datetime="2022-04-11T09:08:17.000Z" title="Created 2022-04-11 17:08:17">2022-04-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XU XUESI</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
