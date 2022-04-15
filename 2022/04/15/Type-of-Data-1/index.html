@@ -1,0 +1,527 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Type of Data 1 | HI</title><meta name="keywords" content="JavaScript"><meta name="author" content="XU XUESI"><meta name="copyright" content="XU XUESI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="原始类型的方法在 JavaScript 中有 7 种原始类型：string，number，bigint，boolean，symbol，null 和 undefined。 对象  能够存储多个值作为属性。 可以使用大括号 &amp;#123;&amp;#125; 创建对象，例如：&amp;#123;name: &quot;John&quot;, age: 30&amp;#125;。JavaScript 中还有其他种类的对象，例如函">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Type of Data 1">
+<meta property="og:url" content="http://xsjsx.top/2022/04/15/Type-of-Data-1/index.html">
+<meta property="og:site_name" content="HI">
+<meta property="og:description" content="原始类型的方法在 JavaScript 中有 7 种原始类型：string，number，bigint，boolean，symbol，null 和 undefined。 对象  能够存储多个值作为属性。 可以使用大括号 &amp;#123;&amp;#125; 创建对象，例如：&amp;#123;name: &quot;John&quot;, age: 30&amp;#125;。JavaScript 中还有其他种类的对象，例如函">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2022/04/08/LrUuhOH2tbPEIwZ.jpg">
+<meta property="article:published_time" content="2022-04-15T03:49:24.000Z">
+<meta property="article:modified_time" content="2022-04-15T15:56:39.717Z">
+<meta property="article:author" content="XU XUESI">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/08/LrUuhOH2tbPEIwZ.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xsjsx.top/2022/04/15/Type-of-Data-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Type of Data 1',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-15 23:56:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/08/LrUuhOH2tbPEIwZ.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HI</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Type of Data 1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-15T03:49:24.000Z" title="Created 2022-04-15 11:49:24">2022-04-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-15T15:56:39.717Z" title="Updated 2022-04-15 23:56:39">2022-04-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Type of Data 1"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="原始类型的方法"><a href="#原始类型的方法" class="headerlink" title="原始类型的方法"></a>原始类型的方法</h1><p>在 JavaScript 中有 7 种原始类型：<code>string</code>，<code>number</code>，<code>bigint</code>，<code>boolean</code>，<code>symbol</code>，<code>null</code> 和 <code>undefined</code>。</p>
+<p>对象</p>
+<ul>
+<li>能够存储多个值作为属性。</li>
+<li>可以使用大括号 <code>&#123;&#125;</code> 创建对象，例如：<code>&#123;name: &quot;John&quot;, age: 30&#125;</code>。JavaScript 中还有其他种类的对象，例如函数就是对象。</li>
+</ul>
+<p>除 <code>null</code> 和 <code>undefined</code> 以外的原始类型都提供了许多有用的方法。</p>
+<h3 id="我能为字符串添加一个属性吗？"><a href="#我能为字符串添加一个属性吗？" class="headerlink" title="我能为字符串添加一个属性吗？"></a>我能为字符串添加一个属性吗？</h3><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line"></span><br><span class="line">str.<span class="property">test</span> = <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(str.<span class="property">test</span>);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><code>undefined</code>（非严格模式）</li>
+<li>报错（严格模式）</li>
+</ol>
+<p><strong>原始类型不是对象。</strong></p>
+<p>它们不能存储额外的数据。</p>
+<h2 id="数字类型"><a href="#数字类型" class="headerlink" title="数字类型"></a>数字类型</h2><hr>
+<p>常规数字不能安全地超过 <code>2^53</code> 或小于 <code>-2^53</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num = <span class="number">255</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( num.<span class="title function_">toString</span>(<span class="number">16</span>) );  <span class="comment">// ff</span></span><br><span class="line"><span class="title function_">alert</span>( num.<span class="title function_">toString</span>(<span class="number">2</span>) );   <span class="comment">// 11111111</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="舍入"><a href="#舍入" class="headerlink" title="舍入"></a>舍入</h2><hr>
+<p>舍入（rounding）是使用数字时最常用的操作</p>
+<p>这里有几个对数字进行舍入的内建函数：</p>
+<ul>
+<li><p><code>Math.floor</code></p>
+<p>向下舍入：<code>3.1</code> 变成 <code>3</code>，<code>-1.1</code> 变成 <code>-2</code>。</p>
+</li>
+<li><p><code>Math.ceil</code></p>
+<p>向上舍入：<code>3.1</code> 变成 <code>4</code>，<code>-1.1</code> 变成 <code>-1</code>。</p>
+</li>
+<li><p><code>Math.round</code></p>
+<p>向最近的整数舍入：<code>3.1</code> 变成 <code>3</code>，<code>3.6</code> 变成 <code>4</code>，中间值 <code>3.5</code> 变成 <code>4</code>。</p>
+<p><code>Math.trunc</code>（IE 浏览器不支持这个方法）</p>
+<p>移除小数点后的所有内容而没有舍入：<code>3.1</code> 变成 <code>3</code>，<code>-1.1</code> 变成 <code>-1</code>。</p>
+</li>
+</ul>
+<p>函数 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">toFixed(n)</a> 将数字舍入到小数点后 <code>n</code> 位，并以字符串形式返回结果。</p>
+<p>在所有其他情况下，<code>Object.is(a，b)</code> 与 <code>a === b</code> 相同。</p>
+<p>这种比较方式经常被用在 JavaScript 规范中。当内部算法需要比较两个值是否完全相同时，它使用 <code>Object.is</code>（内部称为 <a target="_blank" rel="noopener" href="https://tc39.github.io/ecma262/#sec-samevalue">SameValue</a>）</p>
+<h2 id="parseInt-和-parseFloat"><a href="#parseInt-和-parseFloat" class="headerlink" title="parseInt 和 parseFloat"></a>parseInt 和 parseFloat</h2><hr>
+<p>使用加号 <code>+</code> 或 <code>Number()</code> 的数字转换是严格的。如果一个值不完全是一个数字，就会失败：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>( +<span class="string">&quot;100px&quot;</span> ); <span class="comment">// NaN</span></span><br></pre></td></tr></table></figure>
+
+<p>要将 <code>12pt</code> 和 <code>100px</code> 之类的值转换为数字：</p>
+<ul>
+<li>使用 <code>parseInt/parseFloat</code> 进行“软”转换，它从字符串中读取数字，然后返回在发生 error 前可以读取到的值。</li>
+</ul>
+<h2 id="其他数学函数"><a href="#其他数学函数" class="headerlink" title="其他数学函数"></a>其他数学函数</h2><hr>
+<p>JavaScript 有一个内建的 Math 对象，它包含了一个小型的数学函数和常量库。</p>
+<p>几个例子：</p>
+<p>几个例子：</p>
+<ul>
+<li><p><code>Math.random()</code></p>
+<p>返回一个从 0 到 1 的随机数（不包括 1）。</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>( <span class="title class_">Math</span>.<span class="title function_">pow</span>(<span class="number">2</span>, <span class="number">10</span>) ); <span class="comment">// 2 的 10 次幂 = 1024</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="来自访问者的数字的总和"><a href="#来自访问者的数字的总和" class="headerlink" title="来自访问者的数字的总和"></a>来自访问者的数字的总和</h3><hr>
+<p>创建一个脚本，提示访问者输入两个数字，然后显示它们的总和。</p>
+<p>有一个类型陷阱。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = +<span class="title function_">prompt</span>(<span class="string">&quot;The first number?&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> b = +<span class="title function_">prompt</span>(<span class="string">&quot;The second number?&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( a + b );</span><br></pre></td></tr></table></figure>
+
+<p>文档，<code>Math.round</code> 和 <code>toFixed</code> 都将数字舍入到最接近的数字：<code>0..4</code> 会被舍去，而 <code>5..9</code> 会进一位。</p>
+<p>为什么 <code>6.35</code> 被舍入为 <code>6.3</code> 而不是 <code>6.4</code>？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>( <span class="number">6.35</span>.<span class="title function_">toFixed</span>(<span class="number">1</span>) ); <span class="comment">// 6.3</span></span><br><span class="line"><span class="title function_">alert</span>( <span class="number">6.35</span>.<span class="title function_">toFixed</span>(<span class="number">20</span>) ); <span class="comment">// 6.34999999999999964473</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="重复，直到输入的是一个数字"><a href="#重复，直到输入的是一个数字" class="headerlink" title="重复，直到输入的是一个数字"></a>重复，直到输入的是一个数字</h3><hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">readNumber</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> num;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">do</span> &#123;</span><br><span class="line">    num = <span class="title function_">prompt</span>(<span class="string">&quot;Enter a number please?&quot;</span>, <span class="number">0</span>);</span><br><span class="line">  &#125; <span class="keyword">while</span> ( !<span class="built_in">isFinite</span>(num) );</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (num === <span class="literal">null</span> || num === <span class="string">&#x27;&#x27;</span>) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> +num;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">`Read: <span class="subst">$&#123;readNumber()&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">从 min 到 max 的随机数</span><br><span class="line">---------------</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">random</span>(<span class="params">min, max</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> min + <span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">从 min 到 max 的随机整数</span><br><span class="line">---------------</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">randomInteger</span>(<span class="params">min, max</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> rand = min + <span class="title class_">Math</span>.<span class="title function_">random</span>() * (max - min);</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">round</span>(rand);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="title function_">randomInteger</span>(<span class="number">1</span>, <span class="number">3</span>) );</span><br><span class="line"></span><br><span class="line"><span class="title class_">Math</span>.<span class="property">floor</span> 来取范围从 min 到 max+<span class="number">1</span> 的随机数</span><br><span class="line">----------------</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">randomInteger</span>(<span class="params">min, max</span>) &#123;</span><br><span class="line">  <span class="comment">// here rand is from min to (max+1)</span></span><br><span class="line">  <span class="keyword">let</span> rand = min + <span class="title class_">Math</span>.<span class="title function_">random</span>() * (max + <span class="number">1</span> - min);</span><br><span class="line">  <span class="keyword">return</span> <span class="title class_">Math</span>.<span class="title function_">floor</span>(rand);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="title function_">randomInteger</span>(<span class="number">1</span>, <span class="number">3</span>) );</span><br></pre></td></tr></table></figure>
+
+<p>对 <code>0.2</code> 这样的小数时进行加法运算时出现了精度损失</p>
+<p>结论：在处理小数时避免相等性检查</p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><hr>
+<p>单引号和双引号基本相同。</p>
+<p>但是，反引号允许我们通过 <code>$&#123;…&#125;</code> 将任何表达式嵌入到字符串中</p>
+<p>使用“换行符（newline character）”，以支持使用单引号和双引号来创建跨行字符串。换行符写作 <code>\n</code>，用来表示换行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str1 = <span class="string">&quot;Hello\nWorld&quot;</span>; <span class="comment">// 使用“换行符”创建的两行字符串</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用反引号和普通的换行创建的两行字符串</span></span><br><span class="line"><span class="keyword">let</span> str2 = <span class="string">`Hello</span></span><br><span class="line"><span class="string">World`</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(str1 == str2); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p><code>length</code> 属性表示字符串长度</p>
+<p>注意 <code>str.length</code> 是一个数字属性，而不是函数。后面不需要添加括号</p>
+<h3 id="访问字符"><a href="#访问字符" class="headerlink" title="访问字符"></a>访问字符</h3><hr>
+<p>方括号 <code>[pos]</code> 或者调用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">str.charAt(pos)</a> 方法</p>
+<p>方括号是获取字符的一种现代化方法，而 <code>charAt</code> 是历史原因才存在的。</p>
+<p><code>[]</code> 返回 <code>undefined</code>，而 <code>charAt</code> 返回一个空字符串、</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">`Hello`</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( str[<span class="number">1000</span>] ); <span class="comment">// undefined</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">charAt</span>(<span class="number">1000</span>) ); <span class="comment">// &#x27;&#x27;（空字符串）</span></span><br></pre></td></tr></table></figure>
+
+<p>用 <code>for..of</code> 遍历字符</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> char <span class="keyword">of</span> <span class="string">&quot;Hello&quot;</span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>(char); <span class="comment">// H,e,l,l,o（char 变为 &quot;H&quot;，然后是 &quot;e&quot;，然后是 &quot;l&quot; 等）</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">toLowerCase()</a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase()</a> 方法可以改变大小写：</p>
+<h3 id="查找子字符串"><a href="#查找子字符串" class="headerlink" title="查找子字符串"></a>查找子字符串</h3><hr>
+<h4 id="str-indexOf"><a href="#str-indexOf" class="headerlink" title="str.indexOf"></a>str.indexOf</h4><p>给定位置 <code>pos</code> 开始，在 <code>str</code> 中查找 <code>substr</code></p>
+<p>如果没有找到，则返回 <code>-1</code>，否则返回匹配成功的位置。</p>
+<p><strong><code>str.lastIndexOf(substr, pos)</code></strong></p>
+<p>还有一个类似的方法 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf">str.lastIndexOf(substr, position)</a>，它从字符串的末尾开始搜索到开头。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;Widget with id&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (str.<span class="title function_">indexOf</span>(<span class="string">&quot;Widget&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&quot;We found it&quot;</span>); <span class="comment">// 现在工作了！</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>初始位为0–也不会显示</p>
+<p>对于 32-bit 整数，<code>~n</code> 等于 <code>-(n+1)</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;Widget&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (~str.<span class="title function_">indexOf</span>(<span class="string">&quot;Widget&quot;</span>)) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( <span class="string">&#x27;Found it!&#x27;</span> ); <span class="comment">// 正常运行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取子字符串"><a href="#获取子字符串" class="headerlink" title="获取子字符串"></a>获取子字符串</h2><hr>
+<p><code>substring</code>、<code>substr</code> 和 <code>slice</code></p>
+<p>返回字符串从 <code>start</code> 到（但不包括）<code>end</code> 的部分</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;stringify&quot;</span>;</span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">slice</span>(<span class="number">0</span>, <span class="number">5</span>) ); <span class="comment">// &#x27;strin&#x27;，从 0 到 5 的子字符串（不包括 5）</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">slice</span>(<span class="number">0</span>, <span class="number">1</span>) ); <span class="comment">// &#x27;s&#x27;，从 0 到 1，但不包括 1，所以只有在 0 处的字符</span></span><br></pre></td></tr></table></figure>
+
+<p>没有第二个参数，<code>slice</code> 会一直运行到字符串末尾</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str.<span class="title function_">substring</span>(start [, end])</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;stringify&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这些对于 substring 是相同的</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">substring</span>(<span class="number">2</span>, <span class="number">6</span>) ); <span class="comment">// &quot;ring&quot;</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">substring</span>(<span class="number">6</span>, <span class="number">2</span>) ); <span class="comment">// &quot;ring&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ……但对 slice 是不同的：</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">6</span>) ); <span class="comment">// &quot;ring&quot;（一样）</span></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">slice</span>(<span class="number">6</span>, <span class="number">2</span>) ); <span class="comment">// &quot;&quot;（空字符串）</span></span><br></pre></td></tr></table></figure>
+
+<p>返回字符串在 <code>start</code> 和 <code>end</code> <strong>之间</strong> 的部分。</p>
+<p>这与 <code>slice</code> 几乎相同，但它允许 <code>start</code> 大于 <code>end</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.substr(start [, length])</span><br></pre></td></tr></table></figure>
+
+<p>返回字符串从 <code>start</code> 开始的给定 <code>length</code> 的部分。</p>
+<p>与以前的方法相比，这个允许我们指定 <code>length</code> 而不是结束位置：</p>
+<h3 id="字符串比较"><a href="#字符串比较" class="headerlink" title="字符串比较"></a>字符串比较</h3><hr>
+<p>调用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare">str.localeCompare(str2)</a> 会根据语言规则返回一个整数</p>
+<p>这个整数能指示字符串 <code>str</code> 在排序顺序中排在字符串 <code>str2</code> 前面、后面、还是相同：</p>
+<ul>
+<li>如果 <code>str</code> 排在 <code>str2</code> 前面，则返回负数。</li>
+<li>如果 <code>str</code> 排在 <code>str2</code> 后面，则返回正数。</li>
+<li>如果它们在相同位置，则返回 <code>0</code>。</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/string#zong-jie">总结</a></h2><ul>
+<li><p>有 3 种类型的引号。反引号允许字符串跨越多行并可以使用 <code>$&#123;…&#125;</code> 在字符串中嵌入表达式。</p>
+</li>
+<li><p>JavaScript 中的字符串使用的是 UTF-16 编码。</p>
+</li>
+<li><p>我们可以使用像 <code>\n</code> 这样的特殊字符或通过使用 <code>\u...</code> 来操作它们的 Unicode 进行字符插入。</p>
+</li>
+<li><p>获取字符时，使用 <code>[]</code>。</p>
+</li>
+<li><p>获取子字符串，使用 <code>slice</code> 或 <code>substring</code>。</p>
+</li>
+<li><p>字符串的大&#x2F;小写转换，使用：<code>toLowerCase/toUpperCase</code>。</p>
+</li>
+<li><p>查找子字符串时，使用 <code>indexOf</code> 或 <code>includes/startsWith/endsWith</code> 进行简单检查。</p>
+</li>
+<li><p>根据语言比较字符串时使用 <code>localeCompare</code>，否则将按字符代码进行比较。</p>
+</li>
+<li><p><code>str.trim()</code> —— 删除字符串前后的空格 (“trims”)。</p>
+</li>
+<li><p><code>str.repeat(n)</code> —— 重复字符串 <code>n</code> 次。</p>
+</li>
+</ul>
+<hr>
+<p>如果 <code>str</code> 是空的，那么 <code>str[0]</code> 就是 <code>undefined</code>，但由于 <code>undefined</code> 并没有 <code>toUpperCase()</code> 方法，因此我们会得到一个错误</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">ucFirst</span>(<span class="params">str</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (!str) <span class="keyword">return</span> str;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> str[<span class="number">0</span>].<span class="title function_">toUpperCase</span>() + str.<span class="title function_">slice</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="title function_">ucFirst</span>(<span class="string">&quot;john&quot;</span>) ); <span class="comment">// John</span></span><br></pre></td></tr></table></figure>
+
+<p>为了使搜索不区分大小写，我们将字符串改为小写，</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> lowerStr.<span class="title function_">includes</span>(<span class="string">&#x27;viagra&#x27;</span>) || lowerStr.<span class="title function_">includes</span>(<span class="string">&#x27;xxx&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>创建函数 <code>truncate(str, maxlength)</code> 来检查 <code>str</code> 的长度</p>
+<p>超过 <code>maxlength</code> —— 应使用 <code>&quot;…&quot;</code> 来代替 <code>str</code> 的结尾部分，长度仍然等于 <code>maxlength</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">truncate</span>(<span class="string">&quot;What I&#x27;d like to tell on this topic is:&quot;</span>, <span class="number">20</span>) = <span class="string">&quot;What I&#x27;d like to te…&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">truncate</span>(<span class="string">&quot;Hi everyone!&quot;</span>, <span class="number">20</span>) = <span class="string">&quot;Hi everyone!&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">truncate</span>(<span class="params">str, maxlength</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (str.<span class="property">length</span> &gt; maxlength) ?</span><br><span class="line">    str.<span class="title function_">slice</span>(<span class="number">0</span>, maxlength - <span class="number">1</span>) + <span class="string">&#x27;…&#x27;</span> : str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最大长度必须是 <code>maxlength</code>，因此为了给省略号留空间我们需要缩短它</p>
+<h3 id="提取货币"><a href="#提取货币" class="headerlink" title="提取货币"></a>提取货币</h3><hr>
+<p>以 <code>&quot;$120&quot;</code> 这样的格式表示的花销。意味着：先是美元符号，然后才是数值</p>
+<p>函数 <code>extractCurrencyValue(str)</code> 从字符串中提取数值并返回</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">extractCurrencyValue</span>(<span class="params">str</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> +str.<span class="title function_">slice</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p> <strong>有序集合</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = <span class="keyword">new</span> <span class="title class_">Array</span>();</span><br><span class="line"><span class="keyword">let</span> arr = [];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( fruits ); <span class="comment">// Apple,Orange,Plum</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 混合值</span></span><br><span class="line"><span class="keyword">let</span> arr = [ <span class="string">&#x27;Apple&#x27;</span>, &#123; <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span> &#125;, <span class="literal">true</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123; <span class="title function_">alert</span>(<span class="string">&#x27;hello&#x27;</span>); &#125; ];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取索引为 1 的对象然后显示它的 name</span></span><br><span class="line"><span class="title function_">alert</span>( arr[<span class="number">1</span>].<span class="property">name</span> ); <span class="comment">// John</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取索引为 3 的函数并执行</span></span><br><span class="line">arr[<span class="number">3</span>](); <span class="comment">// hello</span></span><br></pre></td></tr></table></figure>
+
+<p>数组可以存储任何类型的元素。</p>
+<p><strong>作用于数组末端的方法：</strong></p>
+<ul>
+<li><p><code>pop</code></p>
+<p>取出并返回数组的最后一个元素</p>
+<p><code>push</code></p>
+<p>数组末端添加元素</p>
+</li>
+</ul>
+<p><strong>作用于数组首端的方法：</strong></p>
+<ul>
+<li><p><code>shift</code></p>
+<p>取出数组的第一个元素并返回它：</p>
+<p><code>unshift</code></p>
+<p>在数组的首端添加元素：</p>
+</li>
+</ul>
+<p>一次添加多个元素</p>
+<p>数组是一种特殊的对象。</p>
+<p>使用方括号来访问属性 <code>arr[0]</code> 实际上是来自于对象的语法。</p>
+<p>与 <code>obj[key]</code> 相同，其中 <code>arr</code> 是对象，而数字用作键（key）</p>
+<p>数组是基于对象的。我们可以给它们添加任何属性</p>
+<p>数组视为作用于 <strong>有序数据</strong> 的特殊结构</p>
+<img src="C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20220415171348382.png" alt="image-20220415171348382" style="zoom:25%;" />
+
+<p><code>shift</code> 操作必须做三件事:</p>
+<ol>
+<li>移除索引为 <code>0</code> 的元素。</li>
+<li>把所有的元素向左移动，把索引 <code>1</code> 改成 <code>0</code>，<code>2</code> 改成 <code>1</code> 以此类推，对其重新编号。</li>
+<li>更新 <code>length</code> 属性。</li>
+</ol>
+<p><strong>数组里的元素越多，移动它们就要花越多的时间，也就意味着越多的内存操作</strong></p>
+<p>数组来说还有另一种循环方式，<code>for..of</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> fruits = [<span class="string">&quot;Apple&quot;</span>, <span class="string">&quot;Orange&quot;</span>, <span class="string">&quot;Plum&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历数组元素</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> fruit <span class="keyword">of</span> fruits) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( fruit );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>for..in</code> 也是可以    技术上来讲，因为数组也是对象</p>
+<p>通常来说，我们不应该用 <code>for..in</code> 来处理数组。</p>
+<p>数组里的项也可以是数组。我们可以将其用于多维数组，例如存储矩阵：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> matrix = [</span><br><span class="line">  [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>],</span><br><span class="line">  [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">  [<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( matrix[<span class="number">1</span>][<span class="number">1</span>] ); <span class="comment">// 最中间的那个数</span></span><br></pre></td></tr></table></figure>
+
+<p>数组有自己的 <code>toString</code> 方法的实现，会返回以逗号隔开的元素列表。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// 1,2,3</span></span><br><span class="line"><span class="title function_">alert</span>( <span class="title class_">String</span>(arr) === <span class="string">&#x27;1,2,3&#x27;</span> ); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( [] + <span class="number">1</span> ); <span class="comment">// &quot;1&quot;</span></span><br><span class="line"><span class="title function_">alert</span>( [<span class="number">1</span>] + <span class="number">1</span> ); <span class="comment">// &quot;11&quot;</span></span><br><span class="line"><span class="title function_">alert</span>( [<span class="number">1</span>,<span class="number">2</span>] + <span class="number">1</span> ); <span class="comment">// &quot;1,21&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>严格比较 <code>===</code> 更简单，因为它不会进行类型转换。</p>
+<p>我们使用 <code>==</code> 来比较数组，除非我们比较的是两个引用同一数组的变量，否则它们永远不相等</p>
+<h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a><strong>总结</strong></h2><hr>
+<p>数组是一种特殊的对象，适用于存储和管理有序的数据项。</p>
+<ul>
+<li><code>for (let i in arr)</code> — 永远不要用这个。</li>
+</ul>
+<p>数组操作</p>
+<hr>
+<ol>
+<li>用 “Classics” 替换掉数组最中间的元素。查找数组最中间的元素的代码应该适用于任何奇数长度的数组。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Math.floor((styles.length - 1) / 2)</span></span><br><span class="line">styles[<span class="title class_">Math</span>.<span class="title function_">floor</span>((styles.<span class="property">length</span> - <span class="number">1</span>) / <span class="number">2</span>)] = <span class="string">&quot;Classics&quot;</span>;</span><br><span class="line"><span class="comment">//去掉数组的第一个值并显示它</span></span><br><span class="line"><span class="title function_">alert</span>( styles.<span class="title function_">shift</span>() );</span><br></pre></td></tr></table></figure>
+
+<p>在数组上下文调用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">push</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>( <span class="variable language_">this</span> );</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">arr[<span class="number">2</span>](); <span class="comment">// ?</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">----------------</span><br><span class="line"><span class="comment">//当用户输入了非数字、空字符串或者点击“取消”按钮的时候，问询结束</span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">if</span> (value === <span class="string">&quot;&quot;</span> || value === <span class="literal">null</span> || !<span class="built_in">isFinite</span>(value)) <span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h1><h3 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h3><p>使用 <code>delete</code>：</p>
+<p>因为 <code>delete obj.key</code> 是通过 <code>key</code> 来移除对应的值</p>
+<p>数组仍然有 3 个元素，我们可以看到 <code>arr.length == 3</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">arr.splice</a> 方法可以说是处理数组的瑞士军刀。</p>
+<p>所有事情：添加，删除和插入元素</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.<span class="title function_">splice</span>(start[, deleteCount, elem1, ..., elemN])</span><br></pre></td></tr></table></figure>
+
+<p>索引 <code>start</code> 开始修改 <code>arr</code>：删除 <code>deleteCount</code> 个元素</p>
+<p>当前位置插入 <code>elem1, ..., elemN</code>。</p>
+<p>返回已被删除元素的数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">1</span>, <span class="number">1</span>); <span class="comment">// 从索引 1 开始删除 1 个元素</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// [&quot;I&quot;, &quot;JavaScript&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>, <span class="string">&quot;right&quot;</span>, <span class="string">&quot;now&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除数组的前三项，并使用其他内容代替它们</span></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">3</span>, <span class="string">&quot;Let&#x27;s&quot;</span>, <span class="string">&quot;dance&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ) <span class="comment">// 现在 [&quot;Let&#x27;s&quot;, &quot;dance&quot;, &quot;right&quot;, &quot;now&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除前两个元素</span></span><br><span class="line"><span class="keyword">let</span> removed = arr.<span class="title function_">splice</span>(<span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( removed ); <span class="comment">// &quot;I&quot;, &quot;study&quot; &lt;-- 被从数组中删除了的元素</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>将 <code>deleteCount</code> 设置为 <code>0</code>，<code>splice</code> 方法就能够插入元素而不用删除任何元素</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&quot;I&quot;</span>, <span class="string">&quot;study&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>];</span><br><span class="line"><span class="comment">// 从索引 2 开始</span></span><br><span class="line"><span class="comment">// 删除 0 个元素</span></span><br><span class="line"><span class="comment">// 然后插入 &quot;complex&quot; 和 &quot;language&quot;</span></span><br><span class="line">arr.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">0</span>, <span class="string">&quot;complex&quot;</span>, <span class="string">&quot;language&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// &quot;I&quot;, &quot;study&quot;, &quot;complex&quot;, &quot;language&quot;, &quot;JavaScript&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>允许负向索引</strong></p>
+<p>在这里和其他数组方法中，负向索引都是被允许的。它们从数组<strong>末尾计算位置</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 从索引 -1（尾端前一位）</span></span><br><span class="line"><span class="comment">// 删除 0 个元素，</span></span><br><span class="line"><span class="comment">// 然后插入 3 和 4</span></span><br><span class="line">arr.<span class="title function_">splice</span>(-<span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">4</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr ); <span class="comment">// 1,2,3,4,5</span></span><br></pre></td></tr></table></figure>
+
+<p>slice</p>
+<hr>
+<p>它会返回一个新数组，将所有从索引 <code>start</code> 到 <code>end</code>（不包括 <code>end</code>）的数组项复制到一个新的数组。</p>
+<p><code>arr.slice()</code> 会创建一个 <code>arr</code> 的副本</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">arr.concat</a> 创建一个新数组，其中包含来自于其他数组和其他项的值。</p>
+<p>它接受任意数量的参数 —— 数组或值都可以。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// create an array from: arr and [3,4]</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>]) ); <span class="comment">// 1,2,3,4</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// create an array from: arr and [3,4] and [5,6]</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>], [<span class="number">5</span>, <span class="number">6</span>]) ); <span class="comment">// 1,2,3,4,5,6</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// create an array from: arr and [3,4], then add values 5 and 6</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>([<span class="number">3</span>, <span class="number">4</span>], <span class="number">5</span>, <span class="number">6</span>) ); <span class="comment">// 1,2,3,4,5,6</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>数组的对象具有 <code>Symbol.isConcatSpreadable</code> 属性，那么它就会被 <code>concat</code> 当作一个数组来处理：此对象中的元素将被添加：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="number">0</span>: <span class="string">&quot;something&quot;</span>,</span><br><span class="line">  <span class="number">1</span>: <span class="string">&quot;else&quot;</span>,</span><br><span class="line">  [<span class="title class_">Symbol</span>.<span class="property">isConcatSpreadable</span>]: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">concat</span>(arrayLike) ); <span class="comment">// 1,2,something,else</span></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">arr.forEach</a> 方法允许为数组的每个元素都运行一个函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">arr.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">item, index, array</span>) &#123;</span><br><span class="line">  <span class="comment">// ... do something with item</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对每个元素调用 alert</span></span><br><span class="line">[<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">forEach</span>(alert);</span><br><span class="line"></span><br><span class="line">[<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">forEach</span>(<span class="function">(<span class="params">item, index, array</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">`<span class="subst">$&#123;item&#125;</span> is at index <span class="subst">$&#123;index&#125;</span> in <span class="subst">$&#123;array&#125;</span>`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>对数组元素而不是字符进行操作：</p>
+<ul>
+<li><code>arr.indexOf(item, from)</code> 从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回索引，否则返回 <code>-1</code>。</li>
+<li><code>arr.lastIndexOf(item, from)</code> —— 和上面相同，只是从右向左搜索。</li>
+<li><code>arr.includes(item, from)</code> —— 从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回 <code>true</code>（译注：如果没找到，则返回 <code>false</code>）。</li>
+</ul>
+<p>此外，<code>includes</code> 的一个非常小的差别是它能正确处理<code>NaN</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="title class_">NaN</span>];</span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">indexOf</span>(<span class="title class_">NaN</span>) ); <span class="comment">// -1（应该为 0，但是严格相等 === equality 对 NaN 无效）</span></span><br><span class="line"><span class="title function_">alert</span>( arr.<span class="title function_">includes</span>(<span class="title class_">NaN</span>) );<span class="comment">// true（这个结果是对的）</span></span><br></pre></td></tr></table></figure>
+
+<p>用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/find">arr.find</a> 方法。</p>
+<p>语法如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">name</span>: <span class="string">&quot;Pete&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">name</span>: <span class="string">&quot;Mary&quot;</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> user = users.<span class="title function_">find</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">id</span> == <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(user.<span class="property">name</span>); <span class="comment">// John</span></span><br></pre></td></tr></table></figure>
+
+<p><code>find</code> 方法搜索的是使函数返回 <code>true</code> 的第一个（单个）元素。</p>
+<p>如果需要匹配的有很多，我们可以使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">arr.filter(fn)</a>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> users = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">name</span>: <span class="string">&quot;Pete&quot;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">name</span>: <span class="string">&quot;Mary&quot;</span>&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回前两个用户的数组</span></span><br><span class="line"><span class="keyword">let</span> someUsers = users.<span class="title function_">filter</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">id</span> &lt; <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(someUsers.<span class="property">length</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/array-methods#map">map</a></h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/map">arr.map</a> 方法是最有用和经常使用的方法之一。</p>
+<p>它对数组的每个元素都调用函数，并<strong>返回结果数组</strong>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> lengths = [<span class="string">&quot;Bilbo&quot;</span>, <span class="string">&quot;Gandalf&quot;</span>, <span class="string">&quot;Nazgul&quot;</span>].<span class="title function_">map</span>(<span class="function"><span class="params">item</span> =&gt;</span> item.<span class="property">length</span>);</span><br><span class="line"><span class="title function_">alert</span>(lengths); <span class="comment">// 5,7,6</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="sort-fn"><a href="#sort-fn" class="headerlink" title="sort(fn)"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/array-methods#sortfn">sort(fn)</a></h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">arr.sort</a> 方法对数组进行 <strong>原位（in-place）</strong> 排序，更改元素的顺序。</p>
+<p>它还返回排序后的数组，但是返回值通常会被忽略，因为修改了 <code>arr</code> 本身</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">15</span> ];</span><br><span class="line"><span class="comment">// 该方法重新排列 arr 的内容</span></span><br><span class="line">arr.<span class="title function_">sort</span>();</span><br><span class="line"><span class="title function_">alert</span>( arr );  <span class="comment">// 1, 15, 2</span></span><br></pre></td></tr></table></figure>
+
+<p>使用我们自己的排序顺序，我们需要<strong>提供一个函数</strong>作为 <code>arr.sort()</code> 的参数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">compareNumeric</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; b) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span> (a == b) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">if</span> (a &lt; b) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = [ <span class="number">1</span>, <span class="number">2</span>, <span class="number">15</span> ];</span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">sort</span>(compareNumeric);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(arr);  <span class="comment">// 1, 2, 15</span></span><br><span class="line"></span><br><span class="line">arr.<span class="title function_">sort</span>( <span class="function">(<span class="params">a, b</span>) =&gt;</span> a - b );</span><br></pre></td></tr></table></figure>
+
+<p>许多字母，使用 <code>str.localeCompare</code> 方法正确地对字母进行排序</p>
+<h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/array-methods#reverse">reverse</a></h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">arr.reverse</a> 方法用于颠倒 <code>arr</code> 中元素的顺序。</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/split">str.split(delim)</a> 方法可以做到。它通过给定的分隔符 <code>delim</code> 将字符串分割成一个数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = <span class="string">&#x27;Bilbo, Gandalf, Nazgul, Saruman&#x27;</span>.<span class="title function_">split</span>(<span class="string">&#x27;, &#x27;</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(arr); <span class="comment">// Bilbo, Gandalf</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str = <span class="string">&quot;test&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( str.<span class="title function_">split</span>(<span class="string">&#x27;&#x27;</span>) ); <span class="comment">// t,e,s,t</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>可选的第二个数字参数 —— 对数组长度的限制</p>
+<p>带有空参数 <code>s</code> 的 <code>split(s)</code>，会将字符串拆分为<strong>字母数组</strong></p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/join">arr.join(glue)</a> 与 <code>split</code> 相反。</p>
+<p>它会在它们之间创建一串由 <code>glue</code> 粘合的 <code>arr</code> 项</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">&#x27;Bilbo&#x27;</span>, <span class="string">&#x27;Gandalf&#x27;</span>, <span class="string">&#x27;Nazgul&#x27;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> str = arr.<span class="title function_">join</span>(<span class="string">&#x27;;&#x27;</span>); <span class="comment">// 使用分号 ; 将数组粘合成字符串</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( str ); <span class="comment">// Bilbo;Gandalf;Nazgul</span></span><br></pre></td></tr></table></figure>
+
+<p>当我们需要遍历一个数组时 —— 我们可以使用 <code>forEach</code>，<code>for</code> 或 <code>for..of</code>。</p>
+<p>当我们需要<strong>遍历并</strong><u>返回每个元素</u>**的数据时 —— 我们可以使用 <code>map</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">arr.reduce</a> 方法和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight">arr.reduceRight</a> 方法和上面的种类差不多，但稍微复杂一点。它们用于根据数组计算单个值</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight">arr.reduceRight</a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">arr.reduce</a> 方法的功能一样，只是遍历为从右到左。</p>
+<p>一行代码得到一个数组的总和</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = arr.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, current</span>) =&gt;</span> sum + current, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(result); <span class="comment">// 15</span></span><br></pre></td></tr></table></figure>
+
+<p>传递给 <code>reduce</code> 的函数仅使用了 2 个参数，通常这就足够了</p>
+<ul>
+<li><code>accumulator</code> —— 是上一个函数调用的结果，第一次等于 <code>initial</code>（如果提供了 <code>initial</code> 的话）。</li>
+<li><code>item</code> —— 当前的数组元素。</li>
+</ul>
+<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/array-methods#arrayisarray">Array.isArray</a></h2><p>数组是基于对象的，不构成单独的语言类型。</p>
+<p>所以 <code>typeof</code> 不能帮助从数组中区分出普通对象：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="keyword">typeof</span> &#123;&#125;); <span class="comment">// object</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="keyword">typeof</span> []); <span class="comment">// same(object)</span></span><br></pre></td></tr></table></figure>
+
+<p>特殊的方法用于判断：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray">Array.isArray(value)</a>。如果 <code>value</code> 是一个数组，则返回 <code>true</code>；否则返回 <code>false</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>(&#123;&#125;)); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>([])); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="大多数方法都支持-“thisArg”"><a href="#大多数方法都支持-“thisArg”" class="headerlink" title="大多数方法都支持 “thisArg”"></a><a target="_blank" rel="noopener" href="https://zh.javascript.info/array-methods#da-duo-shu-fang-fa-du-zhi-chi-thisarg">大多数方法都支持 “thisArg”</a></h2><p>几乎所有调用函数的数组方法 —— 比如 <code>find</code>，<code>filter</code>，<code>map</code>，除了 <code>sort</code> 是一个特例，都接受一个可选的附加参数 <code>thisArg</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arr.<span class="title function_">find</span>(func, thisArg);</span><br><span class="line">arr.<span class="title function_">filter</span>(func, thisArg);</span><br><span class="line">arr.<span class="title function_">map</span>(func, thisArg);</span><br><span class="line"><span class="comment">// ...</span></span><br><span class="line"><span class="comment">// thisArg 是可选的最后一个参数</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thisArg` 参数的值在 `func` 中变为 `this</span><br></pre></td></tr></table></figure>
+
+<p>用 <code>users.filter(user =&gt; army.canJoin(user))</code> 替换对 <code>users.filter(army.canJoin, army)</code> </p>
+<p>数组方法备忘单：</p>
+<ul>
+<li><p>添加&#x2F;删除元素：</p>
+<ul>
+<li><code>push(...items)</code> —— 向尾端添加元素，</li>
+<li><code>pop()</code> —— 从尾端提取一个元素，</li>
+<li><code>shift()</code> —— 从首端提取一个元素，</li>
+<li><code>unshift(...items)</code> —— 向首端添加元素，</li>
+<li><code>splice(pos, deleteCount, ...items)</code> —— 从 <code>pos</code> 开始删除 <code>deleteCount</code> 个元素，并插入 <code>items</code>。</li>
+<li><code>slice(start, end)</code> —— 创建一个新数组，将从索引 <code>start</code> 到索引 <code>end</code>（但不包括 <code>end</code>）的元素复制进去。</li>
+<li><code>concat(...items)</code> —— 返回一个新数组：复制当前数组的所有元素，并向其中添加 <code>items</code>。如果 <code>items</code> 中的任意一项是一个数组，那么就取其元素。</li>
+</ul>
+</li>
+<li><p>搜索元素：</p>
+<ul>
+<li><code>indexOf/lastIndexOf(item, pos)</code> —— 从索引 <code>pos</code> 开始搜索 <code>item</code>，搜索到则返回该项的索引，否则返回 <code>-1</code>。</li>
+<li><code>includes(value)</code> —— 如果数组有 <code>value</code>，则返回 <code>true</code>，否则返回 <code>false</code>。</li>
+<li><code>find/filter(func)</code> —— 通过 <code>func</code> 过滤元素，返回使 <code>func</code> 返回 <code>true</code> 的第一个值&#x2F;所有值。</li>
+<li><code>findIndex</code> 和 <code>find</code> 类似，但返回索引而不是值。</li>
+</ul>
+</li>
+<li><p>遍历元素：</p>
+<ul>
+<li><code>forEach(func)</code> —— 对每个元素都调用 <code>func</code>，不返回任何内容。</li>
+</ul>
+</li>
+<li><p><strong>转换数组</strong>：</p>
+<ul>
+<li><p><code>map(func)</code> —— 根据对每个元素调用 <code>func</code> 的结果创建一个新数组。</p>
+</li>
+<li><p><code>sort(func)</code> —— 对数组进行原位（in-place）排序，然后返回它。</p>
+</li>
+<li><p><code>reverse()</code> —— 原位（in-place）反转数组，然后返回它。</p>
+</li>
+<li><p><code>split/join</code> —— 将字符串转换为数组并返回。</p>
+</li>
+<li><p><code>reduce/reduceRight(func, initial)</code> —— 通过对每个元素调用 <code>func</code> 计算数组上的单个值，并在调用之间传递中间结果。</p>
+<p><code>sort</code>，<code>reverse</code> 和 <code>splice</code> 方法修改的是数组本身</p>
+</li>
+</ul>
+</li>
+<li><p>其他：</p>
+<ul>
+<li><code>Array.isArray(arr)</code> 检查 <code>arr</code> 是否是一个数组。</li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/some">arr.some(fn)</a>&#x2F;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/every">arr.every(fn)</a> 检查数组。</p>
+<p>与 <code>map</code> 类似，对数组的每个元素调用函数 <code>fn</code>。</p>
+<p>如果任何&#x2F;所有结果为 <code>true</code>，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+<p>如果 <code>fn</code> 返回一个真值，<code>arr.some()</code> 立即返回 <code>true</code> 并停止迭代其余数组项；如果 <code>fn</code> 返回一个假值，<code>arr.every()</code> 立即返回 <code>false</code> 并停止对其余数组项的迭代。</p>
+<p>使用 <code>every</code> 来比较数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">arraysEqual</span>(<span class="params">arr1, arr2</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> arr1.<span class="property">length</span> === arr2.<span class="property">length</span> &amp;&amp; arr1.<span class="title function_">every</span>(<span class="function">(<span class="params">value, index</span>) =&gt;</span> value === arr2[index]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>( <span class="title function_">arraysEqual</span>([<span class="number">1</span>, <span class="number">2</span>], [<span class="number">1</span>, <span class="number">2</span>])); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">arr.fill(value, start, end)</a> —— 从索引 <code>start</code> 到 <code>end</code>，用重复的 <code>value</code> 填充数组。</li>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">arr.copyWithin(target, start, end)</a> —— 将从位置 <code>start</code> 到 <code>end</code> 的所有元素复制到 <strong>自身</strong> 的 <code>target</code> 位置（覆盖现有元素）。</li>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/flat">arr.flat(depth)</a>&#x2F;<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap">arr.flatMap(fn)</a> 从多维数组创建一个新的扁平数组。</li>
+<li>[Array.of(element0[, element1[, …[, elementN]]])](<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/of">https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/Array/of</a>) 基于可变数量的参数创建一个新的 <code>Array</code> 实例，而不需要考虑参数的数量或类型。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">XU XUESI</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xsjsx.top/2022/04/15/Type-of-Data-1/">http://xsjsx.top/2022/04/15/Type-of-Data-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/04/08/LrUuhOH2tbPEIwZ.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/15/10-common-algorithms-Sort-2/"><img class="prev-cover" src="https://s2.loli.net/2022/04/08/bxyRMPz2e789gWV.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">10 common algorithms Sort 2</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/14/10-common-algorithms-recursion/"><img class="next-cover" src="https://s2.loli.net/2022/04/08/bxyRMPz2e789gWV.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Recursion and Sort</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/04/06/About-the-blog/" title="About the blog"><img class="cover" src="https://s2.loli.net/2022/04/07/IfvXLpxRaKr5NOu.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-06</div><div class="title">About the blog</div></div></a></div><div><a href="/2022/04/07/What-is-JavaScript02/" title="What is JavaScript 2"><img class="cover" src="https://s2.loli.net/2022/04/08/XUqeavKysYJD3j2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">What is JavaScript 2</div></div></a></div><div><a href="/2022/04/07/What-is-JavaScript01/" title="What is JavaScript 1"><img class="cover" src="https://s2.loli.net/2022/04/08/OFRvV7nebXdygU5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">What is JavaScript 1</div></div></a></div><div><a href="/2022/04/08/What-is-JavaScript03/" title="What is JavaScript 3"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-08</div><div class="title">What is JavaScript 3</div></div></a></div><div><a href="/2022/04/08/What-is-JavaScript04/" title="What is JavaScript 4"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-08</div><div class="title">What is JavaScript 4</div></div></a></div><div><a href="/2022/04/09/What-is-JavaScript05/" title="What is JavaScript 5"><img class="cover" src="https://s2.loli.net/2022/04/08/QSslX9q1OxI8hbd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-09</div><div class="title">What is JavaScript 5</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XU XUESI</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxscqukeio"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxscqukeio" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hsuxuesi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">原始类型的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E8%83%BD%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%90%97%EF%BC%9F"><span class="toc-number">1.0.1.</span> <span class="toc-text">我能为字符串添加一个属性吗？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">数字类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%8D%E5%85%A5"><span class="toc-number">1.2.</span> <span class="toc-text">舍入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#parseInt-%E5%92%8C-parseFloat"><span class="toc-number">1.3.</span> <span class="toc-text">parseInt 和 parseFloat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0"><span class="toc-number">1.4.</span> <span class="toc-text">其他数学函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A5%E8%87%AA%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E6%95%B0%E5%AD%97%E7%9A%84%E6%80%BB%E5%92%8C"><span class="toc-number">1.4.1.</span> <span class="toc-text">来自访问者的数字的总和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%A4%8D%EF%BC%8C%E7%9B%B4%E5%88%B0%E8%BE%93%E5%85%A5%E7%9A%84%E6%98%AF%E4%B8%80%E4%B8%AA%E6%95%B0%E5%AD%97"><span class="toc-number">1.4.2.</span> <span class="toc-text">重复，直到输入的是一个数字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.4.3.</span> <span class="toc-text">字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E5%AD%97%E7%AC%A6"><span class="toc-number">1.4.4.</span> <span class="toc-text">访问字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.4.5.</span> <span class="toc-text">查找子字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#str-indexOf"><span class="toc-number">1.4.5.1.</span> <span class="toc-text">str.indexOf</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.5.</span> <span class="toc-text">获取子字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83"><span class="toc-number">1.5.1.</span> <span class="toc-text">字符串比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E5%8F%96%E8%B4%A7%E5%B8%81"><span class="toc-number">1.6.1.</span> <span class="toc-text">提取货币</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">2.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">2.1.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">数组方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#splice"><span class="toc-number">3.0.1.</span> <span class="toc-text">splice</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#map"><span class="toc-number">3.0.2.</span> <span class="toc-text">map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sort-fn"><span class="toc-number">3.0.3.</span> <span class="toc-text">sort(fn)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#reverse"><span class="toc-number">3.0.4.</span> <span class="toc-text">reverse</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array-isArray"><span class="toc-number">3.1.</span> <span class="toc-text">Array.isArray</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%A4%9A%E6%95%B0%E6%96%B9%E6%B3%95%E9%83%BD%E6%94%AF%E6%8C%81-%E2%80%9CthisArg%E2%80%9D"><span class="toc-number">3.2.</span> <span class="toc-text">大多数方法都支持 “thisArg”</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/10-common-algorithms-Binary-Search/" title="10 common algorithms Binary Search"><img src="https://s3.bmp.ovh/imgs/2022/04/07/c2e10234ed89df92.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="10 common algorithms Binary Search"/></a><div class="content"><a class="title" href="/2022/04/15/10-common-algorithms-Binary-Search/" title="10 common algorithms Binary Search">10 common algorithms Binary Search</a><time datetime="2022-04-15T07:47:54.000Z" title="Created 2022-04-15 15:47:54">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/10-common-algorithms-Linear-Sort/" title="10 common algorithms Linear Sort"><img src="https://s2.loli.net/2022/04/08/bxyRMPz2e789gWV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="10 common algorithms Linear Sort"/></a><div class="content"><a class="title" href="/2022/04/15/10-common-algorithms-Linear-Sort/" title="10 common algorithms Linear Sort">10 common algorithms Linear Sort</a><time datetime="2022-04-15T07:22:51.000Z" title="Created 2022-04-15 15:22:51">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/10-common-algorithms-Sort-2/" title="10 common algorithms Sort 2"><img src="https://s2.loli.net/2022/04/08/bxyRMPz2e789gWV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="10 common algorithms Sort 2"/></a><div class="content"><a class="title" href="/2022/04/15/10-common-algorithms-Sort-2/" title="10 common algorithms Sort 2">10 common algorithms Sort 2</a><time datetime="2022-04-15T05:17:54.000Z" title="Created 2022-04-15 13:17:54">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/15/Type-of-Data-1/" title="Type of Data 1"><img src="https://s2.loli.net/2022/04/08/LrUuhOH2tbPEIwZ.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Type of Data 1"/></a><div class="content"><a class="title" href="/2022/04/15/Type-of-Data-1/" title="Type of Data 1">Type of Data 1</a><time datetime="2022-04-15T03:49:24.000Z" title="Created 2022-04-15 11:49:24">2022-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/14/10-common-algorithms-recursion/" title="Recursion and Sort"><img src="https://s2.loli.net/2022/04/08/bxyRMPz2e789gWV.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recursion and Sort"/></a><div class="content"><a class="title" href="/2022/04/14/10-common-algorithms-recursion/" title="Recursion and Sort">Recursion and Sort</a><time datetime="2022-04-14T05:47:41.000Z" title="Created 2022-04-14 13:47:41">2022-04-14</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XU XUESI</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
