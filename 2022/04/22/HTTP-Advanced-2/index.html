@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HTTP Advanced 2 | HI</title><meta name="keywords" content="HTTP"><meta name="author" content="XU XUESI"><meta name="copyright" content="XU XUESI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="把大象装进冰箱：HTTP传输大文件的方法打开了冰箱门（建立连接） 把大象（文件）塞进去 再关上门（完成传输） 数据压缩 “Accept-Encoding”头字段—-“Content-Encoding”响应头 gzip、deflate、br 等，服务器选择一种压缩算法–放进“Content-Encoding”响应头里–原数据压缩后发给浏览器 gzip 等压缩算法通常只对文本文件 图片、音频视频等多媒">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP Advanced 2">
+<meta property="og:url" content="http://xsjsx.top/2022/04/22/HTTP-Advanced-2/index.html">
+<meta property="og:site_name" content="HI">
+<meta property="og:description" content="把大象装进冰箱：HTTP传输大文件的方法打开了冰箱门（建立连接） 把大象（文件）塞进去 再关上门（完成传输） 数据压缩 “Accept-Encoding”头字段—-“Content-Encoding”响应头 gzip、deflate、br 等，服务器选择一种压缩算法–放进“Content-Encoding”响应头里–原数据压缩后发给浏览器 gzip 等压缩算法通常只对文本文件 图片、音频视频等多媒">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg">
+<meta property="article:published_time" content="2022-04-22T04:06:50.000Z">
+<meta property="article:modified_time" content="2022-04-22T13:45:04.782Z">
+<meta property="article:author" content="XU XUESI">
+<meta property="article:tag" content="HTTP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xsjsx.top/2022/04/22/HTTP-Advanced-2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTTP Advanced 2',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-22 21:45:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">49</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HI</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTTP Advanced 2</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-22T04:06:50.000Z" title="Created 2022-04-22 12:06:50">2022-04-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-22T13:45:04.782Z" title="Updated 2022-04-22 21:45:04">2022-04-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTTP Advanced 2"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="把大象装进冰箱：HTTP传输大文件的方法"><a href="#把大象装进冰箱：HTTP传输大文件的方法" class="headerlink" title="把大象装进冰箱：HTTP传输大文件的方法"></a>把大象装进冰箱：HTTP传输大文件的方法</h1><p>打开了冰箱门（建立连接）</p>
+<p>把大象（文件）塞进去</p>
+<p>再关上门（完成传输）</p>
+<h3 id="数据压缩"><a href="#数据压缩" class="headerlink" title="数据压缩"></a>数据压缩</h3><hr>
+<p>“Accept-Encoding”头字段—-“Content-Encoding”响应头</p>
+<p>gzip、deflate、br 等，服务器选择一种压缩算法–放进“Content-Encoding”响应头里–原数据压缩后发给浏览器</p>
+<p>gzip 等压缩算法通常只对文本文件</p>
+<p>图片、音频视频等多媒体数据本身就已经是高度压缩     有可能会增大一点</p>
+<p>数据压缩在处理文本很好—-手段作为“保底”</p>
+<p>在 Nginx 里就会使用“gzip on”指令，启用对“text&#x2F;html”的压缩。</p>
+<h3 id="分块传输"><a href="#分块传输" class="headerlink" title="分块传输"></a>分块传输</h3><hr>
+<p>大文件整体不能变小，那就把它“拆开”，分解成多个小块，把这些小块分批发给浏览器，浏览器收到后再组装复原</p>
+<p>“化整为零”的思路</p>
+<p>“Transfer-Encoding: chunked”</p>
+<p>也可以用于“流式数据”</p>
+<p>长度是未知的，无法在头字段“Content-Length”里给出确切的长度</p>
+<p>“Transfer-Encoding: chunked”和“Content-Length”这两个字段是互斥的  不能同时出现</p>
+<p>分块传输的编码规则，简单，采用了明文的方式    类似响应头</p>
+<p>每个分块包含两个部分，<strong>长度头和数据块</strong>；</p>
+<p>长度头是以 <strong>CRLF（回车换行，即\r\n）结尾</strong>的一行明文，用 16 进制数字表示长度；</p>
+<p>数据块紧跟在长度头后，最后也用 CRLF 结尾，但数据不包含 CRLF；</p>
+<p>最后用一个<strong>长度为 0 的块表示结束</strong>，即“0\r\n\r\n”。</p>
+<img src="https://static001.geekbang.org/resource/image/25/10/25e7b09cf8cb4eaebba42b4598192410.png" alt="img" style="zoom:25%;" />
+
+<p><img src="https://static001.geekbang.org/resource/image/66/02/66a6d229058c7072ab5b28ef518da302.png" alt="img"></p>
+<p>16 进制长度    然后是数据    0 长度分块结束</p>
+<p>HTTP 协议为了满足这样的需求，提出了“范围请求”（range requests）的概念</p>
+<p>只获取文件的一部分</p>
+<p>“Accept-Ranges: bytes”——Accept-Ranges: none”</p>
+<p>干脆不发送“Accept-Ranges”字段，这样客户端就认为服务器没有实现范围请求功能    发整块文件</p>
+<p>请求头 Range 是 HTTP 范围请求的专用字段，格式是“bytes&#x3D;x-y”</p>
+<hr>
+<p>服务器收到 Range 字段后，需要做四件事。</p>
+<p>状态码 416，意思是“你的范围请求有误，我无法处理，请再检查一下”。</p>
+<p>根据 Range 头计算偏移量，读取文件的片段了</p>
+<p>添加一个响应头字段 Content-Range    片段的实际偏移量和资源的总大小，格式是“bytes x-y&#x2F;length”    “0-10”的范围请求，值就是“bytes 0-10&#x2F;100”</p>
+<p>发送数据了，直接把片段用 TCP 发给客户端，一个范围请求就算是处理完了。</p>
+<hr>
+<h3 id="多段数据"><a href="#多段数据" class="headerlink" title="多段数据"></a>多段数据</h3><p>“multipart&#x2F;byteranges”，表示报文的 body 是由多段字节序列组成的</p>
+<p>并且还要用一个参数“boundary&#x3D;xxx”给出段之间的分隔标记。</p>
+<p>它需要用分隔标记 boundary 来区分不同的片段</p>
+<p><img src="https://static001.geekbang.org/resource/image/ff/37/fffa3a65e367c496428f3c0c4dac8a37.png" alt="img"></p>
+<p>用“Content-Type”和“Content-Range”标记这段数据的类型和所在范围</p>
+<ol>
+<li>压缩 HTML 等文本文件是传输大文件最基本的方法；</li>
+<li>分块传输可以流式收发数据，节约内存和带宽，使用响应头字段“Transfer-Encoding: chunked”来表示，分块的格式是 16 进制长度头 + 数据块；</li>
+<li>范围请求可以只获取部分数据，即“分块请求”，实现视频拖拽或者断点续传，使用请求头字段“Range”和响应头字段“Content-Range”，响应状态码必须是 206；</li>
+<li>也可以一次请求多个范围，这时候响应报文的数据类型是“multipart&#x2F;byteranges”，body 里的多个部分会用 boundary 字符串分隔。 &#x2F;&#x2F;多段数据</li>
+</ol>
+<p>chunked格式里已经有长度了。 含有回车换行（\r\n）不影响分块处理</p>
+<p>如果对一个被 gzip 的文件执行范围请求，比如“Range: bytes&#x3D;10-19”，那么这个范围是应用于原文件还是压缩后的文件呢</p>
+<p><strong>情况一：</strong>如果服务器上<strong>只有 gzip 之后</strong>的文件，没有原文件，那范围请求针对的就是 <strong>gizp 之后的文件</strong>； </p>
+<p><strong>情况二：</strong>如果服务器上<strong>有原文件(未压缩)<strong>，只是在传输过程中被 gizp , 那范围请求针对的就是</strong>未压缩的原文件</strong>。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">XU XUESI</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xsjsx.top/2022/04/22/HTTP-Advanced-2/">http://xsjsx.top/2022/04/22/HTTP-Advanced-2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTTP/">HTTP</a></div><div class="post_share"><div class="social-share" data-image="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/22/HTTP-Advanced-3/"><img class="prev-cover" src="https://s2.loli.net/2022/04/08/wSBiFjCp54DVHgr.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">HTTP Advanced 3</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/21/Object-property-configuration/"><img class="next-cover" src="https://s2.loli.net/2022/04/08/OyRofMb95IL61SQ.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Object property configuration</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/04/12/To-Be-a-HTTP-Hero/" title="To Be a HTTP Hero 1"><img class="cover" src="https://s2.loli.net/2022/04/08/Oo1hQId4C9KxvDs.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-12</div><div class="title">To Be a HTTP Hero 1</div></div></a></div><div><a href="/2022/04/13/HTTP-WORLD-1/" title="HTTP WORLD 1"><img class="cover" src="https://s2.loli.net/2022/04/08/UW3DBJ52KInw8as.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-13</div><div class="title">HTTP WORLD 1</div></div></a></div><div><a href="/2022/04/14/HTTP-WORLD-3/" title="HTTP WORLD 3"><img class="cover" src="https://s2.loli.net/2022/04/08/UW3DBJ52KInw8as.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">HTTP WORLD 3</div></div></a></div><div><a href="/2022/04/13/HTTP-WORLD-2/" title="HTTP WORLD 2"><img class="cover" src="https://s2.loli.net/2022/04/08/UW3DBJ52KInw8as.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-13</div><div class="title">HTTP WORLD 2</div></div></a></div><div><a href="/2022/04/14/MIN-HTTP-Domain-1/" title="MIN_HTTP Domain 1"><img class="cover" src="https://s2.loli.net/2022/04/08/H78bYOWzKjxBlTA.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">MIN_HTTP Domain 1</div></div></a></div><div><a href="/2022/04/20/HTTP-Advanced/" title="HTTP Advanced"><img class="cover" src="https://s2.loli.net/2022/04/08/lQe4os9BuVHFqwR.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">HTTP Advanced</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XU XUESI</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">49</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxscqukeio"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxscqukeio" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hsuxuesi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8A%8A%E5%A4%A7%E8%B1%A1%E8%A3%85%E8%BF%9B%E5%86%B0%E7%AE%B1%EF%BC%9AHTTP%E4%BC%A0%E8%BE%93%E5%A4%A7%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">把大象装进冰箱：HTTP传输大文件的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.0.1.</span> <span class="toc-text">数据压缩</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%9D%97%E4%BC%A0%E8%BE%93"><span class="toc-number">1.0.2.</span> <span class="toc-text">分块传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%AE%B5%E6%95%B0%E6%8D%AE"><span class="toc-number">1.0.3.</span> <span class="toc-text">多段数据</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/22/JavaScript-Class/" title="JavaScript Class"><img src="https://s2.loli.net/2022/04/08/j6yxHogFBRaTqJl.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript Class"/></a><div class="content"><a class="title" href="/2022/04/22/JavaScript-Class/" title="JavaScript Class">JavaScript Class</a><time datetime="2022-04-22T14:58:43.000Z" title="Created 2022-04-22 22:58:43">2022-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/22/prototype-inheritance-1/" title="prototype, inheritance 1"><img src="https://s2.loli.net/2022/04/08/HtpT6z3I5L7G9Yi.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="prototype, inheritance 1"/></a><div class="content"><a class="title" href="/2022/04/22/prototype-inheritance-1/" title="prototype, inheritance 1">prototype, inheritance 1</a><time datetime="2022-04-22T14:57:36.000Z" title="Created 2022-04-22 22:57:36">2022-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/22/HTTP-Advanced-3/" title="HTTP Advanced 3"><img src="https://s2.loli.net/2022/04/08/wSBiFjCp54DVHgr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTTP Advanced 3"/></a><div class="content"><a class="title" href="/2022/04/22/HTTP-Advanced-3/" title="HTTP Advanced 3">HTTP Advanced 3</a><time datetime="2022-04-22T13:46:20.000Z" title="Created 2022-04-22 21:46:20">2022-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/22/HTTP-Advanced-2/" title="HTTP Advanced 2"><img src="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTTP Advanced 2"/></a><div class="content"><a class="title" href="/2022/04/22/HTTP-Advanced-2/" title="HTTP Advanced 2">HTTP Advanced 2</a><time datetime="2022-04-22T04:06:50.000Z" title="Created 2022-04-22 12:06:50">2022-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/21/Object-property-configuration/" title="Object property configuration"><img src="https://s2.loli.net/2022/04/08/OyRofMb95IL61SQ.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Object property configuration"/></a><div class="content"><a class="title" href="/2022/04/21/Object-property-configuration/" title="Object property configuration">Object property configuration</a><time datetime="2022-04-21T13:58:20.000Z" title="Created 2022-04-21 21:58:20">2022-04-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XU XUESI</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
