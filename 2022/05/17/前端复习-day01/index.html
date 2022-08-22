@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>前端基础 HTML day01 | HI</title><meta name="keywords" content="基础"><meta name="author" content="XU XUESI"><meta name="copyright" content="XU XUESI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前端基础 HTML1.1 html标签的类型（head， body，！Doctype） 他们的作用？!Doctype 用于提示web浏览器     当前页面使用    哪个版本的HTML 进行编写的指令 head 容器 内容 包含标签*6 所有头部元素的容器、绝大多数头部标签内容不会显示给读者 head标签下包含的部分标签:      body    定义 包含 支持 定义文档的主体    包含了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端基础 HTML day01">
+<meta property="og:url" content="http://xsjsx.top/2022/05/17/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0-day01/index.html">
+<meta property="og:site_name" content="HI">
+<meta property="og:description" content="前端基础 HTML1.1 html标签的类型（head， body，！Doctype） 他们的作用？!Doctype 用于提示web浏览器     当前页面使用    哪个版本的HTML 进行编写的指令 head 容器 内容 包含标签*6 所有头部元素的容器、绝大多数头部标签内容不会显示给读者 head标签下包含的部分标签:      body    定义 包含 支持 定义文档的主体    包含了">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2022/04/08/SuhaB2rJURj5LKQ.jpg">
+<meta property="article:published_time" content="2022-05-17T02:23:47.000Z">
+<meta property="article:modified_time" content="2022-05-17T03:51:18.063Z">
+<meta property="article:author" content="XU XUESI">
+<meta property="article:tag" content="基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/04/08/SuhaB2rJURj5LKQ.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xsjsx.top/2022/05/17/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0-day01/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '前端基础 HTML day01',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-17 11:51:18'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">58</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/04/08/SuhaB2rJURj5LKQ.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HI</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">前端基础 HTML day01</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-05-17T02:23:47.000Z" title="Created 2022-05-17 10:23:47">2022-05-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-17T03:51:18.063Z" title="Updated 2022-05-17 11:51:18">2022-05-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="前端基础 HTML day01"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前端基础-HTML"><a href="#前端基础-HTML" class="headerlink" title="前端基础 HTML"></a>前端基础 HTML</h1><h4 id="1-1-html标签的类型（head，-body，！Doctype）-他们的作用？"><a href="#1-1-html标签的类型（head，-body，！Doctype）-他们的作用？" class="headerlink" title="1.1 html标签的类型（head， body，！Doctype） 他们的作用？"></a>1.1 html标签的类型（head， body，！Doctype） 他们的作用？</h4><p>!Doctype</p>
+<p>用于<strong>提示</strong>web浏览器     当前页面使用    哪个版本的HTML</p>
+<p>进行编写的指令</p>
+<p>head 容器 内容 包含标签*6</p>
+<p>所有<strong>头部</strong>元素的<strong>容器</strong>、绝大多数头部标签内容不会显示给读者</p>
+<p>head标签下包含的部分标签:   <base> <link> <meta><script><style><title></p>
+<p>body    定义 包含 支持</p>
+<p>定义文档的<strong>主体</strong>    包含了文档所有<strong>内容</strong></p>
+<p>该标签支持 html的全局属性和事件属性</p>
+<h4 id="1-2-h5新特性"><a href="#1-2-h5新特性" class="headerlink" title="1.2 h5新特性"></a>1.2 h5新特性</h4><p>包含了大量与标记相关的JavaScript API定义 *17</p>
+<p>​                选 拖 媒 本 离</p>
+<ol>
+<li><p>document.querySelector()、document.queryAllSelector()新增选择器 </p>
+</li>
+<li><p>drag and drop API 拖动与释放</p>
+</li>
+<li><p>video 和 audio 媒体播放</p>
+</li>
+<li><p>localStorage和sessionStorage本地存储</p>
+</li>
+<li><p>manifest 离线应用</p>
+<hr>
+<p>桌 语 表 地 多</p>
+</li>
+<li><p>Notifications 桌面通知</p>
+</li>
+<li><p>语义化标签*5    header、nav、article、section、footer</p>
+</li>
+<li><p>增强表单控件*6 calendar、date、time、email、url、search</p>
+</li>
+<li><p>地理位置 Geolocation</p>
+</li>
+<li><p>多任务 webworker</p>
+<hr>
+<p>全 史 域 窗 见</p>
+</li>
+<li><p>全双工通信协议 websocket</p>
+</li>
+<li><p>历史管理history</p>
+</li>
+<li><p>跨域资源共享(CORS) </p>
+</li>
+<li><p>跨窗口通信 PostMessage</p>
+</li>
+<li><p>页面<strong>可见性改变</strong>事件 visibilitychange</p>
+<hr>
+<p>对 画</p>
+</li>
+<li><p>Form Data 对象</p>
+</li>
+<li><p>绘画 canvas</p>
+</li>
+</ol>
+<p>H5移除的元素：</p>
+<p>纯表现元素*7：</p>
+<p>basefont、big、center、font、s、strike、tt、u</p>
+<p>对<strong>可用性产生</strong>负面影响的元素*3 frame相关：</p>
+<p>frame、frameset、noframes</p>
+<h4 id="1-3-伪类和伪元素"><a href="#1-3-伪类和伪元素" class="headerlink" title="1.3 伪类和伪元素"></a>1.3 伪类和伪元素</h4><p><strong>伪类：</strong>已有元素    某种状态时    添加对应的样式</p>
+<p>状态根据用户行为而动态变化的    :hover</p>
+<p>处于DOM树无法描述的状态下才能为元素添加样式，所以称为伪类</p>
+<p><strong>伪元素：</strong>用于创建一些<strong>不在DOM树中</strong>的元素，并为其添加样式。</p>
+<p>:before来在一个元素之前添加一些文本，并为这些文本添加样式</p>
+<p>文本可见但并不存在于DOM树中</p>
+<h4 id="1-4-html5语义化-优点：-4"><a href="#1-4-html5语义化-优点：-4" class="headerlink" title="1.4 html5语义化    优点：*4"></a>1.4 html5语义化    优点：*4</h4><p>阅 搜 解 维css3</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>      <span class="comment">&lt;!--：页面主体内容。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hn</span>&gt;</span>         <span class="comment">&lt;!--：h1~h6，分级标题，&lt;h1&gt; 与 &lt;title&gt; 协调有利于搜索引擎优化。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>         <span class="comment">&lt;!--：无序列表。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>         <span class="comment">&lt;!--：有序列表。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span>     <span class="comment">&lt;!--：页眉通常包括网站标志、主导航、全站链接以及搜索框。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span>         <span class="comment">&lt;!--：标记导航，仅对文档中重要的链接群使用。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">main</span>&gt;</span>         <span class="comment">&lt;!--：页面主要内容，一个页面只能使用一次。如果是web应用，则包围其主要功能。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span>    <span class="comment">&lt;!--：定义外部的内容，其中的内容独立于文档的其余部分。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span>    <span class="comment">&lt;!--：定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">aside</span>&gt;</span>         <span class="comment">&lt;!--：定义其所处内容之外的内容。如侧栏、文章的一组链接、广告、友情链接、相关产品列表等。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span>     <span class="comment">&lt;!--：页脚，只有当父级是body时，才是整个页面的页脚。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>      <span class="comment">&lt;!--：呈现小号字体效果，指定细则，输入免责声明、注解、署名、版权。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>     <span class="comment">&lt;!--：和 em 标签一样，用于强调文本，但它强调的程度更强一些。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>         <span class="comment">&lt;!--：将其中的文本表示为强调的内容，表现为斜体。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mark</span>&gt;</span>       <span class="comment">&lt;!--：使用黄色突出显示部分文本。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">figure</span>&gt;</span>     <span class="comment">&lt;!--：规定独立的流内容（图像、图表、照片、代码等等）（默认有40px左右margin）。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">figcaption</span>&gt;</span><span class="comment">&lt;!--：定义 figure 元素的标题，应该被置于 figure 元素的第一个或最后一个子元素的位置。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">cite</span>&gt;</span>       <span class="comment">&lt;!--：表示所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">blockquoto</span>&gt;</span><span class="comment">&lt;!--：定义块引用，块引用拥有它们自己的空间。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span>          <span class="comment">&lt;!--：短的引述（跨浏览器问题，尽量避免使用）。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">time</span>&gt;</span>       <span class="comment">&lt;!--：datetime属性遵循特定格式，如果忽略此属性，文本内容必须是合法的日期或者时间格式。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">abbr</span>&gt;</span>       <span class="comment">&lt;!--：简称或缩写。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dfn</span>&gt;</span>       <span class="comment">&lt;!--：定义术语元素，与定义必须紧挨着，可以在描述列表dl元素中使用。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">address</span>&gt;</span>    <span class="comment">&lt;!--：作者、相关人士或组织的联系信息（电子邮件地址、指向联系信息页的链接）。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">del</span>&gt;</span>        <span class="comment">&lt;!--：移除的内容。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ins</span>&gt;</span>        <span class="comment">&lt;!--：添加的内容。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>       <span class="comment">&lt;!--：标记代码。--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meter</span>&gt;</span>      <span class="comment">&lt;!--：定义已知范围或分数值内的标量测量。（Internet Explorer 不支持 meter 标签）--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">progress</span>&gt;</span>    <span class="comment">&lt;!--：定义运行中的进度（进程）。--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>易于用户<strong>阅读</strong>，<strong>样式丢失</strong>的时候能让页面呈现清晰的结构。</li>
+<li>有利于<strong>SEO</strong>，搜索引擎<strong>根据标签</strong>来确定上下文和各个关键字的<strong>权重</strong>。</li>
+<li>方便<strong>其他设备解析</strong>，如盲人阅读器根据语义渲染网页</li>
+<li>有利于<strong>开发和维护</strong>，语义化更具<strong>可读性</strong>，代码更好维护，与CSS3关系<strong>更和谐</strong>。</li>
+</ul>
+<h4 id="1-5-audio-标签的API"><a href="#1-5-audio-标签的API" class="headerlink" title="1.5 audio 标签的API"></a>1.5 audio 标签的API</h4><p>audio常用属性 s p a c l</p>
+<p>src url</p>
+<p>preload</p>
+<p>autopsy</p>
+<p>controls</p>
+<p>loop</p>
+<p>audio音乐格式的支持 omw</p>
+<p>OGG、MP3、WAV</p>
+<p>chorme不支持wav</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">XU XUESI</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://xsjsx.top/2022/05/17/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0-day01/">http://xsjsx.top/2022/05/17/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0-day01/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2022/04/08/SuhaB2rJURj5LKQ.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/05/17/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A02-day01/"><img class="prev-cover" src="https://s2.loli.net/2022/04/08/MdLewbn57QF6mJp.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">前端复习2 day01</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/10/JavaScript-Web-Api-1/"><img class="next-cover" src="https://s2.loli.net/2022/04/08/HtpT6z3I5L7G9Yi.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">JavaScript Web Api 1</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2022/04/06/PAg8eXHaI7WYG9s.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XU XUESI</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">58</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxscqukeio"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxscqukeio" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hsuxuesi@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-HTML"><span class="toc-number">1.</span> <span class="toc-text">前端基础 HTML</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-html%E6%A0%87%E7%AD%BE%E7%9A%84%E7%B1%BB%E5%9E%8B%EF%BC%88head%EF%BC%8C-body%EF%BC%8C%EF%BC%81Doctype%EF%BC%89-%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1.1 html标签的类型（head， body，！Doctype） 他们的作用？</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/22/IELTS-Writing-DAY01/" title="IELTS Writing DAY01"><img src="https://s2.loli.net/2022/04/08/MdLewbn57QF6mJp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IELTS Writing DAY01"/></a><div class="content"><a class="title" href="/2022/08/22/IELTS-Writing-DAY01/" title="IELTS Writing DAY01">IELTS Writing DAY01</a><time datetime="2022-08-22T07:39:56.000Z" title="Created 2022-08-22 15:39:56">2022-08-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/06/JavaScript%20%E5%87%BD%E6%95%B0/" title="No title"><img src="https://s2.loli.net/2022/04/08/MdLewbn57QF6mJp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="No title"/></a><div class="content"><a class="title" href="/2022/06/06/JavaScript%20%E5%87%BD%E6%95%B0/" title="No title">No title</a><time datetime="2022-06-06T13:33:57.328Z" title="Created 2022-06-06 21:33:57">2022-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A05-day05/" title="前端复习5 day05"><img src="https://s3.bmp.ovh/imgs/2022/04/07/454ef54d7414f0c3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端复习5 day05"/></a><div class="content"><a class="title" href="/2022/05/25/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A05-day05/" title="前端复习5 day05">前端复习5 day05</a><time datetime="2022-05-25T06:15:18.000Z" title="Created 2022-05-25 14:15:18">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/23/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A04-day04/" title="前端复习4 day04"><img src="https://s3.bmp.ovh/imgs/2022/04/07/d46d208771061177.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端复习4 day04"/></a><div class="content"><a class="title" href="/2022/05/23/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A04-day04/" title="前端复习4 day04">前端复习4 day04</a><time datetime="2022-05-23T06:40:57.000Z" title="Created 2022-05-23 14:40:57">2022-05-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/20/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A03-day03/" title="前端复习3 day03"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端复习3 day03"/></a><div class="content"><a class="title" href="/2022/05/20/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A03-day03/" title="前端复习3 day03">前端复习3 day03</a><time datetime="2022-05-20T06:05:46.000Z" title="Created 2022-05-20 14:05:46">2022-05-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By XU XUESI</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
